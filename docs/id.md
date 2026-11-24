@@ -149,7 +149,7 @@ Ya — iklan teks yang membayar modelnya, bukan langganan, dan tidak perlu kartu
 
 * Saldo dihitung dalam **jam** sejak 2026-10-15. **1 jam = 5 Freebucks.**
 * Sebuah model memakan jam sesuai tarif di picker: sejam di model satu-jam memakai satu jam saldo, model tiga-jam memakai tiga, model eksperimen gratis tidak memakai saldo.
-* Region yang didukung mendapat akses penuh. Region lain dan pengguna VPN/proxy mendapat **akses terbatas**: 5 jam sehari, atau 4 kalau pakai VPN atau proxy.
+* Jatah gratis tergantung wilayahmu: 30 jam sehari di Amerika Serikat, 21 atau 12 di negara yang terdaftar di sana, 5 di wilayah lain, dan 4 kalau pakai VPN atau proxy. Tabel lengkapnya ada di [Beranda](https://freebuff.fandom.com/wiki/Freebuff_Wiki_(Bahasa_Indonesia)#Berapa_biayanya?), dan jatah harian dipakai dulu sebelum dompetmu.
 * Referral dan bounty menambah jam, masuk ke dompet, dan dipakai setelah jatah harian.
 
 Katalog saat ini (sering berubah — cek picker):
