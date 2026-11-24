@@ -1,0 +1,119 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''English''' &nbsp;•&nbsp; [[Buffy (Bahasa Indonesia)|Bahasa Indonesia]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]]
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]]
+|}
+
+{| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
+! colspan="2" | Buffy
+|-
+| '''Role''' || The AI agent you talk to; orchestrator
+|-
+| '''Appears in''' || [[Freebuff]] — Desktop, CLI, Web, Cloud, Chat, iOS, Android
+|-
+| '''Main loop''' || base3
+|-
+| '''Helpers''' || up to 6 per call, 20 concurrent with Projects
+|-
+| '''Name in''' || Codebuff docs (orchestrator) and Freebuff merchandise
+|}
+
+'''Buffy''' is the name of the AI agent you talk to inside '''[[Freebuff]]'''. When someone says "ask Buffy", they mean the AI in the chat window. The name also appears in Freebuff's own branding and merchandise — the store sells a [https://freebuff.com/store/buffy-on-fire-t-shirt "Buffy on Fire" T-shirt].
+
+''Everything is on this page — just scroll. Words in yellow are links.''
+
+== Contents ==
+[[#Who is Buffy|1. Who is Buffy]] · [[#How it works|2. How it works]] · [[#Helper agents|3. Helper agents]] · [[#Modes|4. Modes and commands]] · [[#Limits|5. Limits]] · [[#Trivia|6. Trivia and sources]]
+
+== Who is Buffy ==
+Buffy is the main agent and the orchestrator: it decides what to read, which file to change, which command to run, and when to hand a smaller job to a helper.
+
+Buffy is not a character with a backstory. It is the working name of the agent, and the same name is used for the orchestrator in [https://codebuff.com/docs Codebuff], the framework Freebuff is built on.
+
+What Buffy can reach (depending on the surface, the mode and your connections):
+* The files in your project
+* A terminal, to run commands — including a terminal panel you can type into yourself
+* A browser, for clicking, screenshots, console and network errors
+* The web, for documentation and current information
+* The apps you connected, such as GitHub, Linear, Notion or Google Drive
+* MCP servers you added and approved
+
+== How it works ==
+Freebuff's main loop is called '''base3''': one agent investigates, edits and verifies with its own tools. A turn looks like this:
+
+# '''You ask''' for something, in your own words.
+# '''Investigate''' — Buffy lists, searches and reads before changing anything.
+# '''Decide''' — it picks one action: a tool call, a question, or an answer.
+# '''Read the result''' — output goes back into context, including errors and empty results.
+# '''Repeat or report''' — it continues until done, blocked, or in need of you.
+
+The instructions tell the agent to check its own result and to report checks it could not run. That is a rule it follows, not an independent audit: when a reply says "fixed", the evidence is the diff and the commands that actually ran.
+
+== Helper agents ==
+Helper agents are additions to the main loop, not the default shape of a turn. At launch Freebuff shipped '''9 specialized subagents''' orchestrated automatically; named ones include:
+
+* '''code-reviewer''' — reads a change back and looks for problems.
+* '''browser-use''' — drives a real browser.
+* '''file-picker''' — finds which files matter for the request.
+* '''thinker-with-files-gemini''' — deep thinking over your files.
+* a '''research''' helper — reads documentation and current pages.
+
+Limits, from the documentation:
+* Up to '''6 helpers''' in a single spawn request.
+* Up to '''20 code subagents''' at once with Projects access.
+* Full code subagents are not offered in Plan mode and not on sponsored runs.
+* Small or tightly coupled work is usually faster done by the main agent alone.
+
+== Modes ==
+{| class="wikitable"
+! Mode !! What Buffy may do
+|-
+| '''Plan''' || Read and explain only. File writes and changing commands are refused.
+|-
+| '''Build''' || Can create and change files and run commands within the task.
+|}
+
+Saying "do it" inside Plan does not quietly convert the turn into Build — you approve the plan, or ask for a revision. On Desktop the agent is also instructed not to commit, push or open a pull request unless you asked; that is a rule, not a technical lock.
+
+''Note: the CLI is not identical. There the root agent is tied to the selected model and an internal lite mode, so check the behaviour of the version you installed.''
+
+Shortcuts in the chat:
+* <code>/interview</code> — questions first, so the request is clear before work starts.
+* <code>/plan</code> — plan first, change nothing yet.
+* <code>/review</code> — read the current change and look for problems.
+* <code>@</code> — point at a specific file; <code>/</code> opens the command list.
+
+The documented flow from a vague idea to a reviewable change is: <code>/interview</code> → <code>/plan</code> → implement → <code>/review</code>.
+
+== Limits ==
+* It cannot read your mind; a vague brief gives a vague diff.
+* It cannot log in for you or type your passwords — better that you type secrets yourself.
+* It cannot promise perfect code; check anything important.
+* It does not carry context between separate chats.
+* Long conversations get compressed into a summary — restate hard requirements.
+* Answers depend on the model the session is using.
+* Desktop is not a sandbox: commands run with your user's rights.
+
+== Trivia ==
+* "Buffy" is also the name of the '''orchestrator agent''' in [https://codebuff.com/docs Codebuff], the framework Freebuff is built on.
+* The name appears in official merchandise, including the "Buffy on Fire" T-shirt.
+* Freebuff uses specialized agents rather than sending every task through one model and one prompt.
+* The main loop has its own name: '''base3'''.
+
+== Sources ==
+* [https://freebuff.com Freebuff official site] and [https://freebuff.com/store store].
+* [https://docs.freebuff.page/working-with-the-agent Docs — working with the agent] — loop, modes, helpers, tool groups.
+* [https://docs.freebuff.page/cli/ Docs — CLI] — slash commands and flags.
+* [https://freebuff.com/blog/freebuff-launch Launch post] — 9 subagents, slash commands.
+* [https://codebuff.com/docs Codebuff documentation] — orchestrator named "Buffy".
+* [https://github.com/CodebuffAI/freebuff README] — specialized agents and how work is divided.
+* [https://freebuff.com/?ref=ref-ee33d868-d2dc-4b5e-a4d8-8156352d2f60&via=settings_earn_link Referral link used by this wiki] — labelled, no extra cost.
+
+''Checked on 24 November 2026 against those pages.''
+
+[[Category:Buffy]]

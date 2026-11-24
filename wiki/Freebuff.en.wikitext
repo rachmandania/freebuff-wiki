@@ -1,0 +1,252 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''English''' &nbsp;•&nbsp; [[Freebuff (Bahasa Indonesia)|Bahasa Indonesia]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]]
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]]
+|}
+
+{| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
+! colspan="2" | Freebuff
+|-
+| '''Type''' || AI coding agent
+|-
+| '''Made by''' || The Codebuff team (codebuff.com)
+|-
+| '''Built on''' || Codebuff framework
+|-
+| '''Main loop''' || base3
+|-
+| '''Platforms''' || Desktop, CLI, Web, Cloud, Chat, Mobile, Website Builder, Cowork
+|-
+| '''Modes''' || Plan (read only), Build (can change files)
+|-
+| '''Price''' || Free, funded by text ads; optional paid plans
+|-
+| '''Licence''' || Apache-2.0
+|-
+| '''Agent''' || [[Buffy]]
+|-
+| '''Website''' || [https://freebuff.com freebuff.com]
+|}
+
+'''Freebuff''' is a free AI coding agent. You describe what you want in normal language and it works on a real project: it reads the code, changes files, runs the program, checks the result and reports back. The agent doing the work is called '''[[Buffy]]'''.
+
+''Everything is on this page — just scroll. Words in yellow are links.''
+
+== Contents ==
+[[#Overview|1. Overview]] · [[#Platforms|2. Platforms]] · [[#Capabilities|3. Capabilities]] · [[#Tools|4. What tools it has]] · [[#How to start|5. How to start]] · [[#Cost|6. Cost, hours and models]] · [[#Limits|7. Limits]] · [[#FAQ|8. FAQ]] · [[#Glossary|9. Glossary]] · [[#Sources|10. Sources]]
+
+== Overview ==
+Freebuff is not a search engine and not a chat box that only writes text back. The work is a loop: '''request → context → decision → tool call → result → next step'''.
+
+Four layers are easy to collapse into one word:
+{| class="wikitable"
+! Layer !! What it decides
+|-
+| Model || Generates the reply and chooses the next action
+|-
+| Agent || Gives the model a role, instructions, project context and tools
+|-
+| Tool || Performs one concrete action: read a file, search text, run a command
+|-
+| Runtime || Where that action happens — your machine or a cloud workspace
+|}
+
+Freebuff is made by the Codebuff team on top of [https://codebuff.com Codebuff], an open multi-agent framework, and is often described as the free alternative to Claude Code, Codex CLI, Cursor, Windsurf and Devin. The source is public ([https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff], Apache-2.0), and Freebuff reads <code>AGENTS.md</code> and <code>CLAUDE.md</code> so project rules you already wrote still apply.
+
+== Platforms ==
+{| class="wikitable sortable"
+! Version !! What it is
+|-
+| Desktop || macOS, Windows and Linux. Runs agents on a local folder; parallel agents each get their own workspace.
+|-
+| CLI || <code>npm install -g freebuff</code>, then <code>freebuff</code>. Node 16+ per docs, 18+ per the CLI page; works over SSH and in tmux.
+|-
+| Web || Browser version at [https://freebuff.com/app freebuff.com/app], aimed at building and shipping full-stack apps.
+|-
+| Cloud || Runs agents on any GitHub repository, with sandbox, preview, terminal and deploy.
+|-
+| Chat || Free AI chat for questions and research, no project needed.
+|-
+| Mobile || iOS and Android apps; follow and continue chats started on Desktop.
+|-
+| Website Builder || Prompt-to-app with managed hosting and a live URL.
+|-
+| Cowork || A separate surface for non-coding work with the same agent.
+|}
+
+== Capabilities ==
+'''Understand a project'''
+* Map files and explain how the pieces fit together
+* Search for a symbol, string or path; read big files by line range
+
+'''Change code'''
+* Edit files with exact-match replacements, or rewrite a file whole
+* Create new files, refactor a large file into smaller ones
+
+'''Run and verify'''
+* Terminal commands: install, build, test, lint, scripts — with real side effects
+* Run your own post-change hooks when they are configured
+* Live preview of a running site, plus a real browser for clicking, typing, screenshots, console and network errors
+
+'''Ship'''
+* Publish a site with database, file storage and sign-in
+* Work on a connected GitHub repository and open a pull request when asked
+
+'''Produce content'''
+* Documents, slides, spreadsheets and diagrams
+* Images and simple page designs
+
+'''Find information'''
+* Web search plus page reading; a separate research helper for multi-source questions
+
+'''Use your other apps'''
+* GitHub, Linear, Notion, Stripe, Vercel, Supabase, Sentry, PostHog, Resend, Google Drive/Docs/Sheets, Discord, Telegram
+* MCP servers you add and approve
+
+'''Work in parallel'''
+* Up to 6 helpers per spawn request; up to 20 code subagents at once with Projects access
+
+== Tools ==
+The exact set depends on the surface, the mode, your connections and the run.
+
+{| class="wikitable"
+! Group !! Examples
+|-
+| Find and read || list files, glob, code search, read file ranges
+|-
+| Edit || exact-match replace, write whole file
+|-
+| Run || terminal commands
+|-
+| Post-change checks || your configured hooks for changed files
+|-
+| Web || web search, read a URL, a research helper
+|-
+| Browser || navigate, click, type, console, network, screenshot
+|-
+| Terminal panel || a terminal you can see and type into yourself
+|-
+| Connected apps || the integrations you connected
+|-
+| MCP || servers you added and approved
+|-
+| Sites || create, add storage, enable auth, deploy, publish
+|-
+| Service research || find and compare third-party services; signing up needs your yes
+|-
+| Skills || load a named instruction set on demand
+|}
+
+Plan mode makes the writing tools refuse. Some helpers — full code subagents — are offered only with Projects access, not in Plan and not on sponsored runs.
+
+== How to start ==
+# Open [https://freebuff.com freebuff.com] and download Desktop, or open the web app.
+# Or: <code>npm install -g freebuff</code>, then run <code>freebuff</code> inside a project folder.
+# Open an existing project, or start an empty folder.
+# Ask something small first: ''"Explain what this project does."''
+# Then one step at a time, checking the diff as you go.
+
+'''Brief it like a ticket:'''
+* '''Outcome''' — what is true when the task is done.
+* '''Boundary''' — what it may touch and what it must leave alone.
+* '''Check''' — the command, test or URL that proves it.
+
+== Cost ==
+Freebuff is funded by '''text ads''', not a subscription; paid plans add more model time.
+
+* Balances are shown in '''hours''' since 2026-10-15. '''1 hour = 5 Freebucks.''' Freebucks still appear as the credit unit.
+* A model costs hours at the rate in the picker: one-hour model = one hour of balance, three-hour model = three, free experimental models = none.
+* Supported regions get full access. Other regions and VPN/proxy users get '''limited access''': 5 hours a day, or 4 with a VPN or proxy, spent first on every model.
+* Referrals and bounties earn extra hours, which go into a wallet and are used after the daily allowance.
+
+Model catalog (changes often):
+
+{| class="wikitable sortable"
+! Model !! Access !! Notes
+|-
+| DeepSeek V4.1 Flash || Free + paid || Fast coding and tool use, 1M context
+|-
+| DeepSeek V4.1 Flash Slow || Free + paid || Same model streamed slower; default at limited access without a plan, and in Chat
+|-
+| Solar Mini 4 || Free + paid || Upstage, compact, 500K context, text only
+|-
+| Solar Pro 4 || Free + paid || Upstage, larger, 500K context, text only
+|-
+| Muse Spark 1.3 || Paid || Meta agentic coding model, 1M context
+|-
+| Muse Ember || Paid || Meta fast coding model, 375K context
+|-
+| Claude Haiku 5.5 || Paid || Fast Anthropic model, 100K context
+|-
+| GPT-6.1 Terra || Paid || OpenAI, two sessions a day, 1M context, images
+|-
+| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Free experimental || Limited-access tiers
+|}
+
+Gemini 3.1 Flash Lite does specialist jobs such as file finding instead of appearing in the main picker. Retirements already happened: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
+
+Desktop can also run locally installed Claude Code and Codex agents on your own provider account; those are separate from Freebuff's catalog.
+
+== Limits ==
+* Vague requests give vague results.
+* It will not type your passwords or log in for you.
+* No OS sandbox on Desktop: commands use your user's rights and can reach beyond the opened folder. Administrator rights are never granted implicitly.
+* Unknown projects can carry executable settings; the CLI asks before trusting project-level agent or MCP configuration, and trust is tied to a directory.
+* A green build is evidence about the build, not proof the feature is right.
+* Plan and Build are cleanly separated on Desktop; the CLI ties the root agent to the selected model and an internal lite mode, so confirm behaviour instead of assuming.
+* Cloud chats keep separate copies of files; merging is yours, through git.
+* Free hours are limited per day.
+* Context is finite: long chats get compressed into a summary, so restate hard requirements.
+
+== FAQ ==
+; Do I need to know programming?
+: No, but clear requests and a checkable result matter more than vocabulary.
+
+; Is it really free?
+: Ads pay for the models. No card and no API key; paid plans add hours.
+
+; Which is better, Desktop or Cloud?
+: Desktop for your own local project with no sandbox; Cloud for a GitHub repo you want previewed and deployed.
+
+; Can it push to my repository?
+: It is instructed not to commit, push or open a pull request unless you ask — that is a rule, not a technical lock, so review before approving.
+
+; Does it train on my code?
+: Only where a model or feature says data may be used for training. Separately, usage data may train ad-selection models; project files and connected repos are not given to ad providers.
+
+; What is base3?
+: The name of Freebuff's main agent loop: one agent investigates, edits and verifies with its own tools.
+
+== Glossary ==
+; Agent / model / tool / runtime
+: The four layers: role and instructions, the thing generating text, one concrete action, and where it runs.
+; Plan / Build
+: Read-only mode, and the mode allowed to change files.
+; Subagent
+: A helper given one narrow job; its result returns to the main agent.
+; Freebucks
+: Credit unit; balances are in hours, 1 hour = 5 Freebucks.
+; Sandbox
+: An isolated place to run work. Cloud has one; Desktop does not isolate your OS.
+; AGENTS.md
+: A file where a project states its own rules and verification commands.
+; Referral link
+: A link that credits whoever shared it when a new user signs up.
+
+== Sources ==
+* [https://freebuff.com Freebuff official site] — products, models, plans, store.
+* [https://github.com/CodebuffAI/freebuff README] — catalog, hours and Freebucks, access tiers, data notice, licence.
+* [https://docs.freebuff.page/working-with-the-agent Docs — working with the agent] — loop, modes, tool groups, helper limits.
+* [https://docs.freebuff.page/cli/ Docs — CLI] — install, Node version, config paths.
+* [https://docs.freebuff.page/integrations/ Docs — integrations].
+* [https://freebuff.com/blog/freebuff-launch Launch post] — subagents and positioning.
+* [https://freebuff.com/?ref=ref-ee33d868-d2dc-4b5e-a4d8-8156352d2f60&via=settings_earn_link Referral link used by this wiki] — labelled, no extra cost.
+
+''Checked on 24 November 2026. Anything that changes monthly — prices, model names, daily hours — is described as a mechanism rather than a fixed number.''
+
+[[Category:Freebuff]]
