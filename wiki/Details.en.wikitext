@@ -1,0 +1,107 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''English''' &nbsp;•&nbsp; [[Detail (Bahasa Indonesia)|Bahasa Indonesia]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
+|}
+
+'''Details''' is the reference shelf for this wiki: the things that are true but too long to sit on the front page — the model list, the plan numbers, the words Freebuff uses, and the longer answers.
+
+''Everything is on this page — four sections. Words in yellow are links.''
+
+== On this page ==
+[[#Which models are there?|1. Which models are there?]] · [[#What do the plans include?|2. What do the plans include?]] · [[#What do the words mean?|3. What do the words mean?]] · [[#Where does this come from?|4. Where does this come from?]]
+
+== Which models are there? ==
+The list changes often, so treat it as a snapshot and check the model picker in the app.
+
+{| class="wikitable sortable"
+! Model !! Access !! Notes
+|-
+| DeepSeek V4.1 Flash || Free and paid || Fast coding and tool use, 1M context
+|-
+| DeepSeek V4.1 Flash Slow || Free and paid || Same model, streamed slower; the default on limited access without a plan, and in Chat
+|-
+| Solar Mini 4 || Free and paid || Upstage, compact, 500K context, text only
+|-
+| Solar Pro 4 || Free and paid || Upstage, larger, 500K context, text only
+|-
+| Muse Spark 1.3 || Paid || Meta agentic coding model, 1M context
+|-
+| Muse Ember || Paid || Meta fast coding model, 375K context
+|-
+| Claude Haiku 5.5 || Paid || Fast Anthropic model, 100K context
+|-
+| GPT-6.1 Terra || Paid || OpenAI, two sessions a day, 1M context, images
+|-
+| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Free experimental || Limited-access tiers
+|}
+
+* Each model costs hours at the rate shown in the picker: a one-hour model uses one hour of balance, a three-hour model uses three, and free experimental models use none.
+* Gemini 3.1 Flash Lite does specialist jobs such as file finding, rather than appearing in the main picker.
+* Retired already: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
+* Desktop can also run locally installed Claude Code and Codex agents on your own provider account; those are separate from this catalog.
+* On phones the model picker is gone on purpose: mobile uses DeepSeek only, for a simpler screen.
+* On data: a model may only be used for training when its notice says so. Separately, usage data may train the ad-selection models; project files and connected repositories are not given to advertising providers.
+
+== What do the plans include? ==
+{| class="wikitable sortable"
+! Plan !! Full access !! Limited access !! Bonus (full / limited)
+|-
+| Starter || 50 || 21 || +30 / +20
+|-
+| Plus || 80 || 40 || +50 / +40
+|-
+| Pro || 130 || 70 || +100 / +80
+|}
+
+* Limited access still works: it is a smaller allowance, not a block. Paid allowances follow the same full-or-limited split, not the country list.
+* The daily pool is spent before your wallet. It refills at midnight in your account's reset timezone, and unused hours do not carry over.
+* After 7 days in a row, eligible days add 3 hours to the daily pool. The bonus lands on your first message that day and expires at the reset if you do not use it.
+* Plans bought before 9 November 2026 keep their old bonus while the subscription continues. Upgrading keeps the current bonus and adds the new plan's bonus. Cancelling a monthly plan ends its benefits immediately; cancelling an annual plan stops renewal but access continues for the paid year.
+* Referral and bounty hours go into a wallet and are spent after the daily allowance.
+
+== What do the words mean? ==
+; Agent
+: The AI that does the work, not just answers. Here its name is Buffy.
+; Model
+: The part that writes the text and picks the next action; different models cost different amounts of hours.
+; Tool
+: One concrete action the agent can take: read a file, search text, run a command.
+; Runtime
+: Where the work happens — your computer or a cloud workspace.
+; Prompt
+: The message you type to ask for something.
+; Repo (repository)
+: A project folder tracked by git, so changes can be reviewed or undone.
+; Terminal
+: The text window where commands are typed. Freebuff can use it for you.
+; Build
+: Turning source code into something that runs, and checking that it does.
+; Sandbox / workspace
+: A separate place where the project runs. Cloud has one; Desktop does not isolate your OS.
+; Mode
+: Plan (read only) or Build (can change files).
+; Subagent
+: A helper agent with one narrow job; its result goes back to the main agent.
+; Base3
+: The name of Freebuff's main loop: one agent investigates, edits and verifies with its own tools.
+; Freebucks
+: The older credit unit; balances are in hours now, and 1 hour = 5 Freebucks.
+; Referral link
+: A link that credits whoever shared it when a new user signs up.
+
+== Where does this come from? ==
+* [https://freebuff.com Freebuff official site] — models, plans, store.
+* [https://github.com/CodebuffAI/freebuff README on GitHub] — catalog, hours and Freebucks, access tiers, data notice, licence.
+* [https://docs.freebuff.page/working-with-the-agent Freebuff docs] — the loop, modes, tool groups, helper limits.
+* [https://docs.freebuff.page/cli/ Freebuff docs — CLI] — install, Node version, config paths.
+* [https://discord.com/channels/1272267565254840401/1551590914768511007 Freebuff Discord FAQ — Hour Limits] — free hours per region, plan quotas, streak bonus, reset rules (Niko, posted 21 September 2026, edited 22 November 2026).
+* [https://discord.com/channels/1272267565254840401/1573255409647489115 Discord answer on the mobile model picker] — the picker was removed to simplify the mobile UI (Niko, 20 November 2026).
+* Long answers and the full story of each page are also collected on the [[Freebuff|Freebuff page]] and on [[What's new|What's new]].
+
+''Checked on 24 November 2026. Prices, model names and daily limits change often: the numbers here are a snapshot of the sources above, and the Freebuff Discord FAQ is where the current ones live.''
