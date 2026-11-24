@@ -4,9 +4,9 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
 |}
 
 '''Freebuff''' adalah AI coding agent gratis. Kamu menjelaskan keinginanmu dengan bahasa sehari-hari, lalu ia bekerja di project yang sungguhan: membaca kode, mengubah file, menjalankan program, memeriksa hasilnya dan melapor kembali. Agent yang mengerjakannya bernama '''Buffy'''.
@@ -130,8 +130,40 @@ Freebuff dibiayai '''iklan teks''', bukan langganan, dan ada paket berbayar opsi
 
 * Saldo dihitung dalam '''jam''' sejak 2026-10-15. 1 jam = 5 Freebucks.
 * Setiap model memakan jam sesuai tarif di model picker: sejam di model satu-jam memakai satu jam saldo, model tiga-jam memakai tiga, dan model eksperimen gratis tidak memakai saldo.
-* Region yang didukung mendapat akses penuh. Region lain dan pengguna VPN atau proxy mendapat '''akses terbatas''': 5 jam sehari, atau 4 kalau pakai VPN atau proxy.
 * Jam hasil referral dan bounty masuk ke dompet, dan dipakai setelah jatah harian habis.
+
+'''Jam gratis per hari menurut wilayah''' (paket gratis, dari FAQ Discord "Hour Limits"):
+
+{| class="wikitable sortable"
+! Kamu di mana !! Jam gratis per hari
+|-
+| Amerika Serikat || 30
+|-
+| Kanada, Inggris, Australia, Selandia Baru, Irlandia, Norwegia, Swedia, Denmark, Finlandia, Belanda, Austria, Luksemburg, Islandia, Jerman, Swiss || 21
+|-
+| Prancis, Spanyol, Italia, Portugal, Belgia, Liechtenstein, Malta, Korea Selatan || 12
+|-
+| Wilayah lain || 5, dengan akses terbatas
+|-
+| Pakai VPN atau proxy || 4, dengan akses terbatas
+|}
+
+'''Paket berbayar''' — jam per hari, plus bonus jam yang ditambahkan tiap periode tagihan:
+
+{| class="wikitable sortable"
+! Paket !! Akses penuh !! Akses terbatas !! Bonus (penuh / terbatas)
+|-
+| Starter || 50 || 21 || +30 / +20
+|-
+| Plus || 80 || 40 || +50 / +40
+|-
+| Pro || 130 || 70 || +100 / +80
+|}
+
+* Akses terbatas tetap bisa dipakai: jatahnya lebih kecil, bukan diblokir. Jatah paket berbayar juga ikut pembagian penuh atau terbatas, bukan daftar negaranya.
+* Jatah harian dipakai dulu sebelum dompetmu. Isinya penuh lagi tengah malam di zona waktu reset akunmu, dan sisa jam hari itu tidak terbawa ke besok.
+* Setelah 7 hari berturut-turut, hari yang memenuhi syarat menambah 3 jam ke jatah harian. Bonusnya masuk saat pesan pertamamu hari itu dan hangus saat reset kalau tidak dipakai.
+* Jatah gratis mengikuti pendapatan iklan per wilayah, jadi angkanya bisa berubah. FAQ di Discord Freebuff adalah sumber yang selalu terbaru.
 
 Katalog model saat ini (sering berubah — cek model picker):
 
@@ -179,7 +211,7 @@ Soal data: sebuah model hanya boleh dipakai untuk pelatihan kalau pemberitahuann
 : Di Desktop tetap di folder yang kamu buka. Di Cloud berjalan di workspace awan untuk project itu.
 
 ; Bisa pilih model sendiri?
-: Bisa, model picker menunjukkan tiap model dan berapa jam biaya sejam di model itu.
+: Bisa, model picker menunjukkan tiap model dan berapa jam biaya sejam di model itu. Untuk melihatnya, nyalakan '''advanced composer''' di pengaturan umum.
 
 ; Apa itu "Freebucks"?
 : Satuan kredit lama. Sekarang saldo ditampilkan dalam jam; 1 jam = 5 Freebucks.
@@ -219,10 +251,11 @@ Kalau kamu ingin mencoba Freebuff sekaligus mendukung wiki ini, pakai link refer
 == Sumber ==
 * [https://freebuff.com Website resmi Freebuff] — produk, daftar platform, model dan toko.
 * [https://github.com/CodebuffAI/freebuff README di GitHub] — produk, katalog model, jam dan Freebucks, tingkat akses, pemberitahuan data, lisensi.
+* [https://discord.com/channels/1272267565254840401/1551590914768511007 FAQ server Discord Freebuff — Hour Limits] — jam gratis per wilayah, kuota paket, bonus streak dan aturan reset (Niko, diposting 21 September 2026, disunting 22 November 2026).
 * [https://docs.freebuff.page/working-with-the-agent Dokumentasi Freebuff — bekerja dengan agent] — siklus kerja, Plan dan Build, grup tool, batas pembantu.
 * [https://docs.freebuff.page/cli/ Dokumentasi Freebuff — CLI] — perintah install, syarat Node, lokasi config.
 * [https://freebuff.com/blog/freebuff-launch Postingan peluncuran] — subagent, slash command, posisi sebagai alternatif gratis.
 * [https://codebuff.com/docs Dokumentasi Codebuff] — framework dan orkestratornya, "Buffy".
 * Link referral yang dipakai wiki ini — link berlabel di bagian "Dukung wiki ini" di atas; tanpa biaya tambahan untukmu.
 
-''Dicek terhadap halaman-halaman itu pada 24 November 2026. Harga, nama model dan batas harian sering berubah, jadi halaman ini menjelaskan cara kerjanya, bukan menulis angka yang bulan depan sudah salah.''
+''Dicek terhadap halaman-halaman itu pada 24 November 2026. Harga, nama model dan batas harian sering berubah: tabel jam di atas adalah potret FAQ Discord per 22 November 2026, dan FAQ itulah tempat angka terbarunya.''
