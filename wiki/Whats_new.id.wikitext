@@ -1,0 +1,83 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''Bahasa Indonesia''' &nbsp;•&nbsp; [[What's new|English]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+|}
+
+'''Yang baru''' berisi perubahan Freebuff paling akhir, yang terbaru di atas: 14 perubahan tanggal 23–24 November 2026, lalu postingan terbaru dari blog resminya. Tiap baris ada tanggalnya dan ada link ke sumber aslinya, jadi kamu bisa memeriksa sendiri, tidak perlu percaya halaman ini begitu saja.
+
+''Tulisan berwarna kuning adalah link. Halaman ini ditulis untuk orang yang belum pernah ngoding. Freebuff berubah hampir setiap hari, jadi daftar ini adalah potret satu waktu, bukan siaran langsung.''
+
+== Di halaman ini ==
+[[#Sekilas|1. Sekilas]] · [[#Cara membaca satu baris|2. Cara membaca satu baris]] · [[#24 November 2026|3. 24 November 2026]] · [[#23 November 2026|4. 23 November 2026]] · [[#Dari blog|5. Dari blog]] · [[#Dari mana ini diambil|6. Dari mana ini diambil]]
+
+== Sekilas ==
+{| class="wikitable"
+! Topik !! Jawaban
+|-
+| Perubahan terbaru yang dicatat || 24 November 2026, 14:34 UTC
+|-
+| Jumlah perubahan di halaman ini || 14, mencakup 23–24 November 2026
+|-
+| Postingan blog terbaru || 16 November 2026
+|-
+| Zona waktu || semua waktu dalam UTC, sama seperti di sumbernya
+|-
+| Dicek pada || 24 November 2026
+|}
+
+== Cara membaca satu baris ==
+Tiap baris bentuknya begini: '''jam — apa yang berubah — link'''. Satu kalimat menjelaskan artinya dengan bahasa sehari-hari, lalu dua link kecil di dalam tanda kurung:
+
+* '''entry''' membuka perubahan itu di situs changelog yang membaca kode Freebuff.
+* '''commit''' membuka perubahan yang tersimpan di kode, di GitHub. Commit itu catatan mentah satu suntingan — barang aslinya, sebelum ada yang meringkasnya.
+
+Commit bukan pengumuman resmi. Sebagian isinya urusan dapur yang tidak akan kamu sadari; itu tetap dicatat di sini, karena orang yang mau melihat catatan lengkap pantas mendapatkannya. Perubahan yang benar-benar kamu lihat di aplikasi ditandai '''kamu akan lihat'''.
+
+== 24 November 2026 ==
+* '''14:34 — Melanjutkan chat di terminal dibatasi ke chat milikmu sendiri.''' Versi terminal sekarang memeriksa nama chat yang kamu lanjutkan, menutup celah yang tadinya bisa menembus folder lain di komputer. '''Kamu akan lihat:''' tidak ada, kecuali kamu memang mencoba melakukan itu. ([https://freebuff-changelog.nordicnode.workers.dev/c/a5dc0566e891 entry] · [https://github.com/CodebuffAI/freebuff/commit/a5dc0566e891ad9dec8fd7679b73248f8e993a84 commit])
+* '''10:49 — Versi terminal 0.2.37: judul chat, keterangan sponsor, dan batas jumlah mesin virtual.''' Beberapa perubahan yang terlihat sekaligus di CLI, bukan satu perbaikan. ([https://freebuff-changelog.nordicnode.workers.dev/c/49b6612d3d85 entry] · [https://github.com/CodebuffAI/freebuff/commit/49b6612d3d8549a6d53e7ebf6f11d2d375ec5072 commit]) '''Kamu akan lihat:''' judul baru dan baris sponsor.
+* '''09:20 — Kepala halaman chat di terminal tidak lagi menampilkan panel kosong dan menambah baris pemakaian data.''' Sekarang tertulis apa yang terjadi pada datamu, bukan kotak kosong. ([https://freebuff-changelog.nordicnode.workers.dev/c/12311ce1659f entry] · [https://github.com/CodebuffAI/freebuff/commit/12311ce1659f68e232e38f666eb76ca4aa96bd12 commit]) '''Kamu akan lihat:''' kepala halaman lebih ringkas dan satu baris tambahan.
+* '''09:15 — Chat di terminal memberi nama sendiri dari pesan pertama.''' Model menulis judul chat saat kamu mengirim pesan pertama, jadi daftar sesi tidak lagi penuh judul kosong. ([https://freebuff-changelog.nordicnode.workers.dev/c/8233bf1a0c67 entry] · [https://github.com/CodebuffAI/freebuff/commit/8233bf1a0c67becc47fd5878cac7f8767b7c4c1c commit]) '''Kamu akan lihat:''' nama yang bisa dibaca di daftar chat.
+* '''07:17 — Persiapan untuk berbagi akses, termasuk peran "sharer".''' Field berbagi dan nama peran ditambahkan ke kode penghubung aplikasi desktop dan awan. Belum ada yang bisa diklik. ([https://freebuff-changelog.nordicnode.workers.dev/c/66160989bbbb entry] · [https://github.com/CodebuffAI/freebuff/commit/66160989bbbbc879dcd89b7824c9f133fc9a2c55 commit])
+* '''04:49 — Kartu persetujuan sponsor ditulis lebih jelas.''' Kalimat soal perangkat dibuang dan status sponsor dinyatakan terus terang. ([https://freebuff-changelog.nordicnode.workers.dev/c/c28636e3f4b2 entry] · [https://github.com/CodebuffAI/freebuff/commit/c28636e3f4b2db1fe9dab8983e9687f3f93d3cd0 commit]) '''Kamu akan lihat:''' lebih sedikit baris yang harus dibaca sebelum setuju.
+* '''04:08 — Di Windows, perintah terminal tidak lagi berjalan terpisah dari aplikasi.''' Proses yang terlepas bisa hidup lebih lama dari agent dan meninggalkan jendela nyasar. ([https://freebuff-changelog.nordicnode.workers.dev/c/24ffd585ed3a entry] · [https://github.com/CodebuffAI/freebuff/commit/24ffd585ed3a66c392397dad1c8adc4baa4897ef commit]) '''Kamu akan lihat:''' ini kalau kamu membangun dengan SDK Freebuff di Windows.
+* '''00:22 — Urutan chat saat dilanjutkan diperbaiki, plus percobaan ulang saat jaringan putus.''' Chat lama sekarang diurutkan lebih masuk akal, dan pemeriksaan agent mencoba lagi kalau koneksi terputus, tidak langsung gagal. ([https://freebuff-changelog.nordicnode.workers.dev/c/0f30e180c1f2 entry] · [https://github.com/CodebuffAI/freebuff/commit/0f30e180c1f2beadd0cf4a15830a48b7b4a27472 commit]) '''Kamu akan lihat:''' lebih sedikit momen "coba lagi".
+
+== 23 November 2026 ==
+* '''22:37 — Survei profil di dalam chat dimatikan.''' Kuesioner yang bisa muncul di tengah sesi tidak lagi dijalankan. ([https://freebuff-changelog.nordicnode.workers.dev/c/ea1ef3c88c48 entry] · [https://github.com/CodebuffAI/freebuff/commit/ea1ef3c88c4870220d0255095f9a9ef3872d618f commit]) '''Kamu akan lihat:''' satu pop-up lebih sedikit.
+* '''18:39 — Pembanding perubahan file dibatasi supaya suntingan raksasa tidak membekukan aplikasi.''' Pemeriksaan daftar perubahan di file-mu sekarang berhenti lebih awal pada masukan yang sangat besar, tidak menahan semuanya. ([https://freebuff-changelog.nordicnode.workers.dev/c/a73d97674d08 entry] · [https://github.com/CodebuffAI/freebuff/commit/a73d97674d0870188f3ae79ac3a659664ac27993 commit]) '''Kamu akan lihat:''' jendela yang tetap responsif saat banyak file berubah.
+* '''06:50 — Daftar tool dari server yang tersambung sekarang dibagi per halaman, dan persiapan Next.js menemukan paket.''' Dua perbaikan untuk yang menyambungkan tool eksternal: daftar tool panjang dimuat bertahap, dan langkah persiapan tidak lagi gagal menemukan paket. ([https://freebuff-changelog.nordicnode.workers.dev/c/6b8a24286e46 entry] · [https://github.com/CodebuffAI/freebuff/commit/6b8a24286e461ffb50c21e7b0eeec04ab7f4df17 commit])
+* '''06:31 — Menulis ke terminal yang sudah tertutup dianggap selesai normal.''' Dulu agent bisa melaporkan error padahal perintahnya cuma sudah berakhir. ([https://freebuff-changelog.nordicnode.workers.dev/c/43e05ef529da entry] · [https://github.com/CodebuffAI/freebuff/commit/43e05ef529daca1e07bdae627093e336f6535dd1 commit]) '''Kamu akan lihat:''' lebih sedikit baris error merah setelah perintah selesai.
+* '''02:18 — Pertanyaan onboarding pindah ke alur selamat datang, dan tiga dihentikan.''' Lebih sedikit pertanyaan yang menghalangi pengguna baru sampai tugas pertamanya. ([https://freebuff-changelog.nordicnode.workers.dev/c/f53ca1b068b7 entry] · [https://github.com/CodebuffAI/freebuff/commit/f53ca1b068b7abbce7fd8e0239959396eafd28e4 commit]) '''Kamu akan lihat:''' pengalaman pertama yang lebih singkat.
+* '''00:20 — Template mendapat pratinjau langsung.''' Aplikasi dari template bisa dilihat berjalan sebelum kamu menyelesaikannya. ([https://freebuff-changelog.nordicnode.workers.dev/c/4dbf208cbdff entry] · [https://github.com/CodebuffAI/freebuff/commit/4dbf208cbdff945fe8a0141e1b31b14d1c802f70 commit]) '''Kamu akan lihat:''' pratinjau, bukan halaman kosong.
+
+== Dari blog ==
+Blog resmi jauh lebih sering menerbitkan panduan dan perbandingan daripada catatan rilis, jadi ini postingan terbaru, bukan fitur terbaru.
+
+* [https://freebuff.com/blog/free-alternative-to-augment-code 16 November 2026 — Alternatif gratis untuk Augment Code]
+* [https://freebuff.com/blog/deepai-code-model-picker-crouton-alpha-mismatch 16 November 2026 — "DeepAI Code bilang itu GPT-6 Luna. Jawabannya sendiri bilang Crouton Alpha."]
+* [https://freebuff.com/blog/freebuff-vs-devin 15 November 2026 — Freebuff vs Devin: sehari penuh gratis vs kuota kecil yang harus ditunggu]
+* [https://freebuff.com/blog/freebuff-vs-cline 13 November 2026 — Freebuff vs Cline: gratis sepanjang hari vs tagihan API yang membesar tiap percobaan ulang]
+
+== Dari mana ini diambil ==
+Dua sumber, dan penting tahu mana yang mana:
+
+* '''Daftar perubahan''' diambil dari [https://freebuff-changelog.nordicnode.workers.dev/ changelog tak resmi] yang membaca repositori kode publik [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff] dan meringkas tiap commit. Situs itu '''bukan tulisan staf Freebuff'''. Commit-nya asli; ringkasan satu baris tetap bisa salah menekankan. Itu sebabnya setiap baris menautkan commit-nya sendiri.
+* '''Postingan blog''' diambil dari feed resmi [https://freebuff.com/blog/rss.xml freebuff.com/blog/rss.xml].
+
+[https://freebuff.com/changelog Halaman changelog resmi Freebuff] memang ada, tapi entri terbarunya 18 Agustus 2026, jadi tidak bisa dipakai untuk daftar "yang baru". Halaman itu tetap tempat yang tepat untuk membaca catatan rilis bulan-bulan lama.
+
+== Sumber ==
+* [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-24/ Changelog tak resmi — 24 November 2026] — semua entri bertanggal 24 November di atas.
+* [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-23/ Changelog tak resmi — 23 November 2026] — semua entri bertanggal 23 November di atas.
+* [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff di GitHub] — commit-nya sendiri.
+* [https://freebuff.com/blog/rss.xml RSS blog Freebuff] — empat postingan di atas.
+* [https://freebuff.com/changelog Changelog resmi Freebuff] — sudah dicek, entri terbaru 18 Agustus 2026.
+
+''Dicek pada 24 November 2026. Halaman ini diperbarui manual; saat Freebuff merilis hal baru, daftar di sini bisa tertinggal beberapa hari, sementara link changelog di atas sudah lebih dulu tahu.''

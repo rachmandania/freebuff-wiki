@@ -1,0 +1,83 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''English''' &nbsp;•&nbsp; [[What's new (Bahasa Indonesia)|Bahasa Indonesia]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+|}
+
+'''What's new''' lists the most recent changes to Freebuff, newest first: 14 changes from 23–24 November 2026, then the latest posts from the official blog. Every entry carries its date and a link to the original commit, so you can check it yourself instead of trusting this page.
+
+''Words in yellow are links. This page is written for people who have never coded before. Freebuff changes almost every day, so this list is a snapshot, not a live feed.''
+
+== On this page ==
+[[#At a glance|1. At a glance]] · [[#How to read an entry|2. How to read an entry]] · [[#24 November 2026|3. 24 November 2026]] · [[#23 November 2026|4. 23 November 2026]] · [[#From the blog|5. From the blog]] · [[#Where this comes from|6. Where this comes from]]
+
+== At a glance ==
+{| class="wikitable"
+! Topic !! Answer
+|-
+| Newest change listed || 24 November 2026, 14:34 UTC
+|-
+| Changes on this page || 14, covering 23–24 November 2026
+|-
+| Newest blog post || 16 November 2026
+|-
+| Time zone || all times are UTC, as shown by the source
+|-
+| Checked on || 24 November 2026
+|}
+
+== How to read an entry ==
+Every line looks like this: '''time — what changed — links'''. One sentence says what it means in plain language, then two small links in brackets:
+
+* '''entry''' opens that change on the changelog site that reads Freebuff's code.
+* '''commit''' opens the exact saved change in the code on GitHub. A commit is the raw record of one edit — the thing itself, before anybody summarised it.
+
+A commit is not a product announcement. Some of them are internal plumbing you will never notice; those are still listed here, because a reader who wants the full record should get it. Entries that touch what you actually see are marked '''you will notice'''.
+
+== 24 November 2026 ==
+* '''14:34 — Resuming a terminal chat is limited to your own chats.''' The terminal version now validates the chat name you resume, closing a path-traversal hole that could reach other folders on the computer. '''You will notice:''' nothing, unless you were trying to do that. ([https://freebuff-changelog.nordicnode.workers.dev/c/a5dc0566e891 entry] · [https://github.com/CodebuffAI/freebuff/commit/a5dc0566e891ad9dec8fd7679b73248f8e993a84 commit])
+* '''10:49 — Terminal version 0.2.37: chat titles, a sponsorship notice, and a cap on virtual machines.''' A bundle of visible changes to the CLI rather than one fix. ([https://freebuff-changelog.nordicnode.workers.dev/c/49b6612d3d85 entry] · [https://github.com/CodebuffAI/freebuff/commit/49b6612d3d8549a6d53e7ebf6f11d2d375ec5072 commit]) '''You will notice:''' the new title and the sponsorship line.
+* '''09:20 — The terminal chat header stops showing an empty panel and gains a data-use line.''' The header now states what happens to your data instead of leaving a blank box. ([https://freebuff-changelog.nordicnode.workers.dev/c/12311ce1659f entry] · [https://github.com/CodebuffAI/freebuff/commit/12311ce1659f68e232e38f666eb76ca4aa96bd12 commit]) '''You will notice:''' a shorter header and one extra line of text.
+* '''09:15 — Terminal chats name themselves from the first message.''' The model writes the chat title on the first send, so you no longer start with a list of untitled sessions. ([https://freebuff-changelog.nordicnode.workers.dev/c/8233bf1a0c67 entry] · [https://github.com/CodebuffAI/freebuff/commit/8233bf1a0c67becc47fd5878cac7f8767b7c4c1c commit]) '''You will notice:''' readable names in your chat list.
+* '''07:17 — Groundwork for sharing access, including a "sharer" role.''' Shared fields and role names were added to the code that connects the desktop app to the cloud. Nothing to click yet. ([https://freebuff-changelog.nordicnode.workers.dev/c/66160989bbbb entry] · [https://github.com/CodebuffAI/freebuff/commit/66160989bbbbc879dcd89b7824c9f133fc9a2c55 commit])
+* '''04:49 — The sponsored-consent card is worded more clearly.''' It drops the sentences about your device and states the sponsorship plainly. ([https://freebuff-changelog.nordicnode.workers.dev/c/c28636e3f4b2 entry] · [https://github.com/CodebuffAI/freebuff/commit/c28636e3f4b2db1fe9dab8983e9687f3f93d3cd0 commit]) '''You will notice:''' fewer lines to read before you agree.
+* '''04:08 — On Windows, terminal commands no longer start detached.''' Detached processes could outlive the agent and leave stray windows behind. ([https://freebuff-changelog.nordicnode.workers.dev/c/24ffd585ed3a entry] · [https://github.com/CodebuffAI/freebuff/commit/24ffd585ed3a66c392397dad1c8adc4baa4897ef commit]) '''You will notice:''' this if you build on Freebuff with the SDK on Windows.
+* '''00:22 — Better ordering when you resume a chat, plus a network retry.''' Resuming now ranks past chats more sensibly, and checking the agent survives a dropped connection instead of failing outright. ([https://freebuff-changelog.nordicnode.workers.dev/c/0f30e180c1f2 entry] · [https://github.com/CodebuffAI/freebuff/commit/0f30e180c1f2beadd0cf4a15830a48b7b4a27472 commit]) '''You will notice:''' fewer "try again" moments.
+
+== 23 November 2026 ==
+* '''22:37 — The profile survey inside chats was switched off.''' The questionnaire that could appear during a session no longer launches. ([https://freebuff-changelog.nordicnode.workers.dev/c/ea1ef3c88c48 entry] · [https://github.com/CodebuffAI/freebuff/commit/ea1ef3c88c4870220d0255095f9a9ef3872d618f commit]) '''You will notice:''' one less pop-up.
+* '''18:39 — Comparing file changes is capped so a huge edit cannot freeze the app.''' The check that lists what changed in your files now stops early on very large inputs instead of blocking. ([https://freebuff-changelog.nordicnode.workers.dev/c/a73d97674d08 entry] · [https://github.com/CodebuffAI/freebuff/commit/a73d97674d0870188f3ae79ac3a659664ac27993 commit]) '''You will notice:''' a window that keeps responding while many files change.
+* '''06:50 — Tool lists from connected servers now page, and Next.js preparation finds packages.''' Two fixes for people who connect external tools: long tool lists load page by page, and the setup step no longer fails to locate packages. ([https://freebuff-changelog.nordicnode.workers.dev/c/6b8a24286e46 entry] · [https://github.com/CodebuffAI/freebuff/commit/6b8a24286e461ffb50c21e7b0eeec04ab7f4df17 commit])
+* '''06:31 — Writing to an already closed terminal is treated as a normal exit.''' Before, the agent could report an error when the command had simply finished. ([https://freebuff-changelog.nordicnode.workers.dev/c/43e05ef529da entry] · [https://github.com/CodebuffAI/freebuff/commit/43e05ef529daca1e07bdae627093e336f6535dd1 commit]) '''You will notice:''' fewer red error lines after a command ends.
+* '''02:18 — Onboarding questions moved into the welcome flow, and three were retired.''' Fewer questions stand between a new user and their first task. ([https://freebuff-changelog.nordicnode.workers.dev/c/f53ca1b068b7 entry] · [https://github.com/CodebuffAI/freebuff/commit/f53ca1b068b7abbce7fd8e0239959396eafd28e4 commit]) '''You will notice:''' a shorter first-run experience.
+* '''00:20 — Templates gained live previews.''' Apps built from a template can be shown running before you finish them. ([https://freebuff-changelog.nordicnode.workers.dev/c/4dbf208cbdff entry] · [https://github.com/CodebuffAI/freebuff/commit/4dbf208cbdff945fe8a0141e1b31b14d1c802f70 commit]) '''You will notice:''' a preview instead of a blank page.
+
+== From the blog ==
+The official blog publishes guides and comparisons far more often than release notes, so these are the newest posts rather than the newest features.
+
+* [https://freebuff.com/blog/free-alternative-to-augment-code 16 November 2026 — The free alternative to Augment Code]
+* [https://freebuff.com/blog/deepai-code-model-picker-crouton-alpha-mismatch 16 November 2026 — "DeepAI Code said it was GPT-6 Luna. Its own response said Crouton Alpha."]
+* [https://freebuff.com/blog/freebuff-vs-devin 15 November 2026 — Freebuff vs Devin: a full free day vs a light quota you have to wait out]
+* [https://freebuff.com/blog/freebuff-vs-cline 13 November 2026 — Freebuff vs Cline: free all day vs an API bill that grows with every retry]
+
+== Where this comes from ==
+Two sources, and it is worth knowing which is which:
+
+* '''The change list''' comes from [https://freebuff-changelog.nordicnode.workers.dev/ an unofficial changelog] that reads the public code repository [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff] and summarises every commit. It is '''not written by Freebuff staff'''. The commits are real; a one-line summary of a commit can still put the emphasis in the wrong place. That is exactly why every entry links to the commit itself.
+* '''The blog posts''' come from the official feed [https://freebuff.com/blog/rss.xml freebuff.com/blog/rss.xml].
+
+The official [https://freebuff.com/changelog Freebuff changelog page] exists, but its newest entry is 18 August 2026, so it cannot be used for a "what's new" list. It is still the right place to read polished release notes for older months.
+
+== Sources ==
+* [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-24/ Unofficial changelog — 24 November 2026] — every entry dated 24 November above.
+* [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-23/ Unofficial changelog — 23 November 2026] — every entry dated 23 November above.
+* [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff on GitHub] — the commits themselves.
+* [https://freebuff.com/blog/rss.xml Freebuff blog RSS] — the four posts above.
+* [https://freebuff.com/changelog Freebuff official changelog] — checked, newest entry 18 August 2026.
+
+''Checked on 24 November 2026. This page is updated by hand; when Freebuff ships something new, the list here may be a few days behind, and the changelog links above will already be ahead of it.''
