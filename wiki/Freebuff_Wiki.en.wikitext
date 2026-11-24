@@ -4,135 +4,85 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |}
 
-'''Freebuff''' is a free AI coding agent. You describe what you want in normal language and it works on a real project: it reads the code, changes files, runs the program, checks the result and reports back. The agent doing the work is called '''Buffy'''.
+'''Freebuff''' is a free AI coding agent. You say what you want in normal language and it works on a real project: it reads the code, changes files, runs the program, checks the result and tells you what happened. The agent doing the work is called '''Buffy'''.
 
-''Everything is on this one page — just scroll. Words in yellow are links you can click. This wiki is written for people who have never coded before.''
+''Everything is on this page — five sections, no more. Words in yellow are links. This wiki is written for people who have never coded before.''
 
 == On this page ==
-[[#What is Freebuff|1. What is Freebuff]] · [[#Who is Buffy|2. Who is Buffy]] · [[#Platforms|3. Where you can use it]] · [[#Capabilities|4. What it can do]] · [[#How to start|5. How to start]] · [[#Cost|6. Is it really free?]] · [[#Limits|7. Limits]] · [[#FAQ|8. FAQ]] · [[#Glossary|9. Glossary]] · [[#Sources|10. Sources]]
+[[#What is Freebuff?|1. What is Freebuff?]] · [[#Where can I use it?|2. Where can I use it?]] · [[#What can it do?|3. What can it do?]] · [[#How much does it cost?|4. How much does it cost?]] · [[#How do I start?|5. How do I start?]]
 
-== What is Freebuff ==
+== What is Freebuff? ==
 {| class="wikitable"
 ! Topic !! Answer
 |-
-| What it is || A free AI coding agent, funded by text ads
+| What it is || A free AI coding agent, paid for by text ads
 |-
 | The agent || Buffy
 |-
 | Made by || The Codebuff team, on the Codebuff framework
 |-
-| Where || Desktop, CLI, Web, Cloud, Chat, iOS, Android, Website Builder, Cowork
+| Where || Desktop, CLI, Web, Cloud, Chat, phone apps, Website Builder, Cowork
 |-
 | Modes || Plan (read only) and Build (can change files)
 |-
 | Cost || Free; optional paid plans add model hours
 |-
 | Official site || [https://freebuff.com freebuff.com]
-|-
-| Documentation || [https://docs.freebuff.page docs.freebuff.page]
 |}
 
-Freebuff is not a search engine and not a chat box that only writes text back. It is a loop: it reads your project, decides on one action, uses a tool, reads the result, and decides again — until the job is done or it needs something from you.
+Freebuff is not a search engine and not a chat box that only writes text. It is a loop: it reads your project, decides on one action, uses a tool, reads the result, and decides again — until the job is done or it needs something from you.
 
-Four layers are easy to mix up:
-* '''Model''' — generates the reply and chooses the next action.
-* '''Agent''' — gives the model a role, instructions, your project's context and a set of tools.
-* '''Tool''' — does one concrete thing: read a file, search text, run a command, open a page.
-* '''Runtime''' — decides where that happens: your machine or a cloud workspace.
+Four words are easy to mix up:
+* '''Model''' — writes the answer and picks the next action.
+* '''Agent''' — gives the model a role, instructions, your project and a set of tools.
+* '''Tool''' — does one concrete thing: read a file, search text, run a command.
+* '''Runtime''' — where that happens: your computer or a cloud workspace.
 
-Freebuff is made by the Codebuff team on top of [https://codebuff.com Codebuff], an open multi-agent framework. It is often described as the free alternative to Claude Code, Codex CLI, Cursor, Windsurf and Devin.
+The project is public: [https://github.com/CodebuffAI/freebuff github.com/CodebuffAI/freebuff], licence Apache-2.0. It is often described as the free alternative to Claude Code, Codex CLI, Cursor, Windsurf and Devin.
 
-The project is public: [https://github.com/CodebuffAI/freebuff github.com/CodebuffAI/freebuff], licence Apache-2.0.
+== Who is Buffy? ==
+'''Buffy''' is the name of the AI agent you talk to — "ask Buffy" means the AI in the chat window. The name is also the app's mascot and appears on the [https://freebuff.com/store/buffy-on-fire-t-shirt "Buffy on Fire" T-shirt] in the official store.
 
-== Who is Buffy ==
-'''Buffy''' is the name of the AI agent you talk to in Freebuff — "ask Buffy" means the AI in the chat window. The same name is used for the app's mascot and on official merchandise, including a [https://freebuff.com/store/buffy-on-fire-t-shirt "Buffy on Fire" T-shirt] in the Freebuff store.
+Inside Freebuff the main loop is called '''base3''': one agent investigates, edits and checks with its own tools. Helper agents sit on top of it — a research assistant, and in some setups code subagents. In Codebuff's documentation, "Buffy" is the orchestrator agent, which is where the name comes from.
 
-Inside Freebuff, the main working loop is called '''base3''': one agent investigates, edits and checks with its own tools. Helper agents exist on top of it — a research assistant, and in some configurations code subagents.
-
-In Codebuff's documentation, "Buffy" is the name of the orchestrator agent. Freebuff is built on that framework, which is why the name carries over.
-
-== Platforms ==
+== Where can I use it? ==
 {| class="wikitable sortable"
 ! Version !! What it is
 |-
-| Desktop || App for macOS, Windows and Linux. Runs agents on a folder on your own computer; parallel agents each get their own workspace.
+| Desktop || App for macOS, Windows and Linux; agents run on a folder on your own computer.
 |-
-| CLI || Terminal version: <code>npm install -g freebuff</code>, then run <code>freebuff</code> inside the project. Needs Node (docs say 16+, the CLI page says 18+).
+| CLI || Terminal version: <code>npm install -g freebuff</code>, then <code>freebuff</code>.
 |-
-| Web || Runs in your browser at [https://freebuff.com/app freebuff.com/app]; aimed at building and shipping full-stack apps.
+| Web || Runs in the browser at [https://freebuff.com/app freebuff.com/app].
 |-
-| Cloud || Runs agents on any GitHub repository, with a sandbox, preview, terminal and deploy flow.
+| Cloud || Runs agents on a GitHub repository, with sandbox, preview and deploy.
 |-
 | Chat || Free AI chat for questions and ideas; no project needed.
 |-
-| Mobile || iOS and Android apps to follow and continue chats from your phone, including chats running on Desktop.
+| Mobile || iOS and Android apps to follow and continue chats, including ones running on Desktop.
 |-
-| Website Builder || Prompt-to-app builder with managed hosting, so you get a live URL.
+| Website Builder || Builds an app from a prompt with managed hosting and a live URL.
 |-
-| Cowork || A separate Freebuff surface for working with the agent outside pure coding.
+| Cowork || A separate surface for working with the agent outside coding.
 |}
 
-== Capabilities ==
-'''Finding and reading'''
-* Map an unfamiliar project and explain how it fits together
-* Read large files by line range instead of guessing
-* Search code for a symbol, string or file name
+== What can it do? ==
+* '''Read a project:''' map an unfamiliar codebase, read big files by line range, search for a symbol or file.
+* '''Change code:''' edit files, create new ones, run tests, builds and installers in a real terminal.
+* '''Check its work:''' show a live preview of a website, drive a real browser, read console and network errors.
+* '''Ship:''' publish a site with database, file storage and sign-in; work on a connected GitHub repository.
+* '''Make content:''' documents, slides, spreadsheets, diagrams, images and simple page designs.
+* '''Use your other apps:''' GitHub, Linear, Notion, Stripe, Google Drive, Discord, Telegram and MCP servers you approve.
 
-'''Editing and running'''
-* Edit files, create new ones, run tests, builds and installers in a real terminal
-* Work with git: see the diff, commit, review
-* Use hooks that run your own checks after a file changes
+== How much does it cost? ==
+Freebuff is funded by '''text ads''' instead of a subscription. There are optional paid plans that add model time, and the balance is counted in '''hours''' (1 hour = 5 Freebucks).
 
-'''Checking'''
-* Show a live preview of a running website next to the chat
-* Drive a real browser: click, type, read the console and network errors, take screenshots
-
-'''Shipping'''
-* Publish a site with database, file storage and sign-in
-* Work directly on a connected GitHub repository
-
-'''Content'''
-* Documents, slides, spreadsheets and diagrams
-* Images and simple page designs
-
-'''Information'''
-* Search the web and read documentation pages
-* Ask a separate research helper for multi-source answers
-
-'''Connected apps'''
-* GitHub, Linear, Notion, Stripe, Google Drive and Docs and Sheets, Discord, Telegram and others you connect
-* MCP servers you add and approve
-
-'''Parallel work'''
-* Up to 6 helpers in one spawn request, and up to 20 code subagents at once with Projects access
-
-== How to start ==
-# Open [https://freebuff.com freebuff.com] and download the desktop app, or open the web app.
-# Or use the terminal: <code>npm install -g freebuff</code>, then <code>freebuff</code>.
-# Open a project folder, or start an empty one.
-# Type a request in plain language, for example: ''"Explain what this project does."''
-# Read the answer, then give the next small step.
-
-Brief it like a ticket — three questions: '''what''' to do, '''where''' it may touch, and '''how''' you will know it worked (the command, test or URL).
-
-Useful habits:
-* Start in '''Plan''' mode on an unfamiliar project: nothing can be changed while you look around.
-* One small step at a time beats "build the whole app".
-* Keep the project in git so a bad change can be undone.
-
-== Cost ==
-Freebuff is funded by '''text ads''' instead of a subscription, and there are optional paid plans that give more time with models.
-
-* Balances are counted in '''hours''' since 2026-10-15. 1 hour = 5 Freebucks.
-* Each model costs hours at a rate shown in the model picker: an hour on a one-hour model uses one hour of balance, a three-hour model uses three, and free experimental models use none.
-* Earned hours come from referrals and bounties, go into a wallet, and are spent after the daily allowance.
-
-'''Free hours per day by region''' (free plan, from the Discord FAQ "Hour Limits"):
+'''Free hours a day, by region:'''
 
 {| class="wikitable sortable"
 ! Where you are !! Free hours a day
@@ -148,96 +98,44 @@ Freebuff is funded by '''text ads''' instead of a subscription, and there are op
 | On a VPN or proxy || 4, with limited access
 |}
 
-'''Paid plans''' — daily hours, plus the bonus hours added each billing period:
+'''Paid plans:''' Starter 50 hours a day (21 on limited access), Plus 80 (40), Pro 130 (70), each with bonus hours added every billing period. The daily pool is spent before your wallet, refills at midnight in your account's timezone, and does not carry over; after 7 days in a row, eligible days add 3 hours.
 
-{| class="wikitable sortable"
-! Plan !! Full access !! Limited access !! Bonus (full / limited)
-|-
-| Starter || 50 || 21 || +30 / +20
-|-
-| Plus || 80 || 40 || +50 / +40
-|-
-| Pro || 130 || 70 || +100 / +80
-|}
+The model list and the exact plan bonuses are on the [[Details|Details page]].
 
-* Limited access still works: it is a smaller allowance, not a block. Paid allowances follow the same full-or-limited split, not the country list.
-* The daily pool is spent before your wallet. It refills at midnight in your account's reset timezone, and unused daily hours do not carry over.
-* After 7 days in a row, eligible days add 3 hours to the daily pool. The bonus lands on your first message that day and expires at the reset if you do not use it.
-* Free allowances follow ad revenue by region, so these numbers can change. The FAQ in the Freebuff Discord is the live source.
-
-Current model catalog (this changes often — check the picker):
-
-{| class="wikitable sortable"
-! Model !! Access
-|-
-| DeepSeek V4.1 Flash (and Flash Slow, Flash Fast) || Free and paid
-|-
-| Solar Mini 4 · Solar Pro 4 || Free and paid
-|-
-| Muse Spark 1.3 · Muse Ember || Paid plans
-|-
-| Claude Haiku 5.5 (100K context) || Paid plans
-|-
-| GPT-6.1 Terra || Paid plans
-|-
-| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Free experimental (limited access)
-|}
-
-Gemini 3.1 Flash Lite is used for specialist jobs such as file finding rather than appearing in the main picker. Retirement happens: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon and Gemini 3.8 Flash have already left the catalog.
-
-On data: a model may only be used for training when its notice says so. Separately, Freebuff may use your usage data to train the models that choose and measure ads; project files and connected repositories are not given to advertising providers.
-
-== Limits ==
+== What are its limits? ==
 * Vague requests give vague results — say what "done" looks like.
 * It will not type your passwords or log in for you.
-* No OS sandbox on Desktop: commands run with your own user rights and can reach beyond the opened folder.
-* It cannot promise perfect code; a green build is evidence about the build, not about everything else.
-* Answers depend on which model the session is using.
-* Free hours are limited per day; heavy use runs into the allowance.
-* Plan and Build are cleanly separated on Desktop; the CLI behaviour differs, so check your installed version.
-* A Cloud chat works on a copy of the project, not your local folder — merging is yours, through git.
+* No OS sandbox on Desktop: commands run with your own user rights.
+* It cannot promise perfect code; a green build is evidence about the build, not about everything.
+* A Cloud chat works on a copy of the project; merging is yours, through git.
 
-== FAQ ==
+== How do I start? ==
+# Open [https://freebuff.com freebuff.com] and download the desktop app, or open the web app.
+# Or use the terminal: <code>npm install -g freebuff</code>, then <code>freebuff</code>.
+# Open a project folder, or start an empty one.
+# Ask something small first: ''"Explain what this project does."''
+# Read the answer, then give the next small step.
+
+Brief it like a ticket: '''what''' to do, '''where''' it may touch, and '''how''' you will know it worked.
+
+* Start in '''Plan''' mode on an unfamiliar project: nothing can change while you look around.
+* One small step at a time beats "build the whole app".
+* Keep the project in git so a bad change can be undone.
+
+== Common questions ==
 ; Do I need to know programming?
-: No, but it helps. You need to say clearly what you want and check the result.
+: No, but it helps. Say clearly what you want and check the result.
 
 ; Is it really free?
-: Yes — ads pay for the models, and there is no card or API key required. Paid plans exist for more model time.
+: Yes — ads pay for the models, and no card or API key is required. Paid plans exist for more model time.
 
 ; Can it break my project?
-: It can make mistakes. Use Plan mode first for big changes and keep the project in git.
+: It can make mistakes. Use Plan mode first for big changes, and keep the project in git.
 
 ; Where does my code go?
 : On Desktop it stays in the folder you opened. On Cloud it runs in a cloud workspace for that project.
 
-; Can I choose the model?
-: Yes, the model picker shows each model and how many hours an hour on it costs. To see it, turn on advanced composer in general settings
-
-; What is "Freebucks"?
-: The older credit unit. Balances are shown in hours now; 1 hour = 5 Freebucks.
-
-; Does it train on my code?
-: Only when a model or feature says data may be used for training. Check that notice per model.
-
-== Glossary ==
-; Agent
-: The AI that does the work, not just answers questions. Here its name is Buffy.
-; Prompt
-: The message you type to ask for something.
-; Repo (repository)
-: A project folder tracked by git, so changes can be reviewed or undone.
-; Terminal
-: The text window where commands are typed. Freebuff can use it for you.
-; Build
-: Turning source code into something that runs, and checking that it does.
-; Sandbox / workspace
-: A separate place where the project runs. Cloud has one; Desktop does not isolate your OS.
-; Mode
-: How much power the agent has: Plan (read only) or Build (can change files).
-; Subagent
-: A helper agent given one narrow job, whose result goes back to the main agent.
-; Referral link
-: A link that credits whoever shared it when a new user signs up.
+Longer answers, the model list and the glossary are on the [[Details|Details page]].
 
 == Support this wiki ==
 If you want to try Freebuff and support this wiki at the same time, use the founder's referral link. It costs you nothing extra — the Freebuff you get is the same — and part of it helps keep this wiki running.
@@ -248,14 +146,10 @@ If you want to try Freebuff and support this wiki at the same time, use the foun
 
 ''This is a referral link, not the plain official link, and it is labelled so nothing is hidden from readers.''
 
-== Sources ==
-* [https://freebuff.com Freebuff official site] — products, platform list, models and store.
-* [https://github.com/CodebuffAI/freebuff README on GitHub] — products, model catalog, hours and Freebucks, access tiers, data notice, licence.
-* [https://discord.com/channels/1272267565254840401/1551590914768511007 Freebuff Discord FAQ — Hour Limits] — free hours per region, plan quotas, streak bonus and reset rules (Niko, posted 21 September 2026, edited 22 November 2026).
-* [https://docs.freebuff.page/working-with-the-agent Freebuff docs — working with the agent] — the loop, Plan and Build, tool groups, helper limits.
-* [https://docs.freebuff.page/cli/ Freebuff docs — CLI] — install command, Node requirement, config paths.
-* [https://freebuff.com/blog/freebuff-launch Launch post] — subagents, slash commands, positioning as a free alternative.
-* [https://codebuff.com/docs Codebuff documentation] — the framework and its orchestrator, "Buffy".
-* Referral link used by this wiki — the labelled link in "Support this wiki" above; no extra cost to you.
+== Where does this page come from? ==
+* [https://freebuff.com Freebuff official site] — products, platforms, models, store.
+* [https://github.com/CodebuffAI/freebuff README on GitHub] — model catalog, hours, access tiers, licence.
+* [https://docs.freebuff.page/working-with-the-agent Freebuff docs] — the loop, Plan and Build, tool groups, helper limits.
+* [https://discord.com/channels/1272267565254840401/1551590914768511007 Freebuff Discord FAQ — Hour Limits] — free hours per region, plan quotas, streak bonus, reset rules (Niko, posted 21 September 2026, edited 22 November 2026).
 
-''Checked against those pages on 24 November 2026. Prices, model names and daily limits change often: the hour tables above are a snapshot of the Discord FAQ as of 22 November 2026, and that FAQ is where the current numbers live.''
+''Checked on 24 November 2026. Prices and daily limits change: the hour table is a snapshot of the Discord FAQ as of 22 November 2026, and that FAQ is where the current numbers live.''
