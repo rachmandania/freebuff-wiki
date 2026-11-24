@@ -4,9 +4,9 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |}
 
 {| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
@@ -38,9 +38,9 @@
 ''Semua isi ada di halaman ini — tinggal scroll. Tulisan berwarna kuning adalah link.''
 
 == Daftar isi ==
-[[#Ringkasan|1. Ringkasan]] · [[#Platform|2. Platform]] · [[#Kemampuan|3. Kemampuan]] · [[#Tool|4. Tool yang tersedia]] · [[#Cara mulai|5. Cara mulai]] · [[#Biaya|6. Biaya, jam dan model]] · [[#Batasan|7. Batasan]] · [[#Pertanyaan umum|8. Pertanyaan umum]] · [[#Glosarium|9. Glosarium]] · [[#Sumber|10. Sumber]]
+[[#Apa itu Freebuff?|1. Apa itu Freebuff?]] · [[#Di mana bisa dipakai?|2. Di mana bisa dipakai?]] · [[#Apa kemampuannya?|3. Apa kemampuannya?]] · [[#Berapa biayanya?|4. Berapa biayanya?]] · [[#Bagaimana cara mulai?|5. Bagaimana cara mulai?]]
 
-== Ringkasan ==
+== Apa itu Freebuff? ==
 Freebuff bukan mesin pencari dan bukan kotak chat yang hanya menulis teks. Pekerjaannya adalah siklus: '''permintaan → konteks → keputusan → panggilan tool → hasil → langkah berikutnya'''.
 
 Empat lapisan yang mudah tertukar:
@@ -58,7 +58,7 @@ Empat lapisan yang mudah tertukar:
 
 Freebuff dibuat tim Codebuff di atas [https://codebuff.com Codebuff], framework multi-agent terbuka, dan sering disebut alternatif gratis untuk Claude Code, Codex CLI, Cursor, Windsurf dan Devin. Kodenya publik ([https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff], Apache-2.0), dan Freebuff membaca <code>AGENTS.md</code> serta <code>CLAUDE.md</code> sehingga aturan project yang sudah kamu tulis tetap berlaku.
 
-== Platform ==
+== Di mana bisa dipakai? ==
 {| class="wikitable sortable"
 ! Versi !! Apa itu
 |-
@@ -79,7 +79,7 @@ Freebuff dibuat tim Codebuff di atas [https://codebuff.com Codebuff], framework 
 | Cowork || Permukaan terpisah untuk pekerjaan non-coding dengan agent yang sama.
 |}
 
-== Kemampuan ==
+== Apa kemampuannya? ==
 '''Memahami project'''
 * Memetakan file dan menjelaskan bagaimana bagian-bagiannya menyatu
 * Mencari simbol, teks atau path; membaca file besar per rentang baris
@@ -111,7 +111,7 @@ Freebuff dibuat tim Codebuff di atas [https://codebuff.com Codebuff], framework 
 '''Kerja paralel'''
 * Sampai 6 pembantu per permintaan spawn; sampai 20 subagent kode sekaligus dengan akses Projects
 
-== Tool ==
+== Tool apa saja yang ada? ==
 Set pastinya tergantung permukaan, mode, koneksi dan jalannya sesi.
 
 {| class="wikitable"
@@ -144,7 +144,7 @@ Set pastinya tergantung permukaan, mode, koneksi dan jalannya sesi.
 
 Mode Plan membuat tool penulisan menolak. Beberapa pembantu — subagent kode penuh — hanya tersedia dengan akses Projects, bukan di Plan dan bukan di sesi bersponsor.
 
-== Cara mulai ==
+== Bagaimana cara mulai? ==
 # Buka [https://freebuff.com freebuff.com] dan unduh Desktop, atau buka versi web.
 # Atau: <code>npm install -g freebuff</code>, lalu jalankan <code>freebuff</code> di folder project.
 # Buka project yang ada, atau mulai folder kosong.
@@ -156,43 +156,17 @@ Mode Plan membuat tool penulisan menolak. Beberapa pembantu — subagent kode pe
 * '''Batas''' — apa yang boleh disentuh dan apa yang harus dibiarkan.
 * '''Pemeriksaan''' — perintah, test atau URL yang membuktikannya.
 
-== Biaya ==
+== Berapa biayanya? ==
 Freebuff dibiayai '''iklan teks''', bukan langganan; paket berbayar menambah waktu model.
 
 * Saldo ditampilkan dalam '''jam''' sejak 2026-10-15. '''1 jam = 5 Freebucks.''' Freebucks masih dipakai sebagai satuan kredit.
 * Sebuah model memakan jam sesuai tarif di picker: model satu-jam = satu jam saldo, model tiga-jam = tiga, model eksperimen gratis = nol.
-* Region yang didukung mendapat akses penuh. Region lain dan pengguna VPN/proxy mendapat '''akses terbatas''': 5 jam sehari, atau 4 dengan VPN atau proxy, dipakai lebih dulu di setiap model.
+* Jatah gratis tergantung wilayahmu: 30 jam sehari di Amerika Serikat, 21 atau 12 di negara yang terdaftar di sana, 5 di wilayah lain, dan 4 kalau pakai VPN atau proxy. Tabel lengkapnya ada di [[Freebuff Wiki (Bahasa Indonesia)#Berapa biayanya?|Beranda]], dan jatah harian dipakai dulu sebelum dompetmu.
 * Referral dan bounty menambah jam, masuk ke dompet, dan dipakai setelah jatah harian.
 
-Katalog model (sering berubah):
+Daftar model, bonus paket dan glosarium ada di [[Detail (Bahasa Indonesia)|halaman Detail]].
 
-{| class="wikitable sortable"
-! Model !! Akses !! Catatan
-|-
-| DeepSeek V4.1 Flash || Gratis + berbayar || Coding dan tool use cepat, konteks 1M
-|-
-| DeepSeek V4.1 Flash Slow || Gratis + berbayar || Model sama, aliran lebih lambat; default di akses terbatas tanpa paket, dan di Chat
-|-
-| Solar Mini 4 || Gratis + berbayar || Upstage, ringkas, konteks 500K, hanya teks
-|-
-| Solar Pro 4 || Gratis + berbayar || Upstage, lebih besar, konteks 500K, hanya teks
-|-
-| Muse Spark 1.3 || Berbayar || Model agentic coding Meta, konteks 1M
-|-
-| Muse Ember || Berbayar || Model coding cepat Meta, konteks 375K
-|-
-| Claude Haiku 5.5 || Berbayar || Model cepat Anthropic, konteks 100K
-|-
-| GPT-6.1 Terra || Berbayar || OpenAI, dua sesi sehari, konteks 1M, gambar
-|-
-| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Eksperimen gratis || Tingkat akses terbatas
-|}
-
-Gemini 3.1 Flash Lite mengerjakan tugas khusus seperti mencari file, bukan tampil di picker utama. Sudah ada yang pensiun: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
-
-Desktop juga bisa menjalankan agent Claude Code dan Codex yang terpasang lokal dengan akun provider-mu sendiri; itu terpisah dari katalog Freebuff.
-
-== Batasan ==
+== Apa batasnya? ==
 * Permintaan kabur menghasilkan hasil kabur.
 * Ia tidak akan mengetik password-mu atau login untukmu.
 * Di Desktop tidak ada sandbox OS: perintah memakai hak user-mu dan bisa keluar dari folder yang dibuka. Hak administrator tidak pernah diberikan diam-diam.
@@ -203,7 +177,7 @@ Desktop juga bisa menjalankan agent Claude Code dan Codex yang terpasang lokal d
 * Jam gratis dibatasi per hari.
 * Konteks terbatas: chat panjang diringkas menjadi ringkasan, jadi ulangi syarat penting.
 
-== Pertanyaan umum ==
+== Pertanyaan yang sering muncul ==
 ; Apakah saya harus bisa programming?
 : Tidak, tapi permintaan yang jelas dan hasil yang bisa diperiksa lebih penting daripada istilah teknis.
 
@@ -222,23 +196,7 @@ Desktop juga bisa menjalankan agent Claude Code dan Codex yang terpasang lokal d
 ; Apa itu base3?
 : Nama siklus agent utama Freebuff: satu agent menyelidiki, mengubah dan memverifikasi dengan tool-nya sendiri.
 
-== Glosarium ==
-; Agent / model / tool / runtime
-: Empat lapisan: peran dan instruksi, yang menghasilkan teks, satu tindakan konkret, dan di mana ia berjalan.
-; Plan / Build
-: Mode hanya-baca, dan mode yang boleh mengubah file.
-; Subagent
-: Pembantu dengan satu tugas sempit; hasilnya kembali ke agent utama.
-; Freebucks
-: Satuan kredit; saldo dalam jam, 1 jam = 5 Freebucks.
-; Sandbox
-: Tempat terisolasi untuk menjalankan pekerjaan. Cloud punya; Desktop tidak mengisolasi OS-mu.
-; AGENTS.md
-: File tempat project menyatakan aturan dan perintah verifikasinya sendiri.
-; Link referral
-: Link yang memberi kredit ke orang yang membagikannya saat pengguna baru mendaftar.
-
-== Sumber ==
+== Dari mana halaman ini diambil? ==
 * [https://freebuff.com Website resmi Freebuff] — produk, model, paket, toko.
 * [https://github.com/CodebuffAI/freebuff README] — katalog, jam dan Freebucks, tingkat akses, pemberitahuan data, lisensi.
 * [https://docs.freebuff.page/working-with-the-agent Dokumentasi — bekerja dengan agent] — siklus, mode, grup tool, batas pembantu.
