@@ -1,0 +1,107 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''Bahasa Indonesia''' &nbsp;•&nbsp; [[Details|English]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
+|}
+
+'''Detail''' adalah rak rujukan wiki ini: hal-hal yang benar tapi terlalu panjang untuk ditaruh di halaman depan — daftar model, angka paket, istilah yang dipakai Freebuff, dan jawaban yang lebih panjang.
+
+''Semua isi ada di halaman ini — empat bagian. Tulisan berwarna kuning adalah link.''
+
+== Daftar isi ==
+[[#Model apa saja yang ada?|1. Model apa saja yang ada?]] · [[#Apa isi tiap paket?|2. Apa isi tiap paket?]] · [[#Apa arti istilah-istilahnya?|3. Apa arti istilah-istilahnya?]] · [[#Dari mana ini diambil?|4. Dari mana ini diambil?]]
+
+== Model apa saja yang ada? ==
+Daftarnya sering berubah, jadi anggap ini potret satu waktu dan cek model picker di aplikasi.
+
+{| class="wikitable sortable"
+! Model !! Akses !! Catatan
+|-
+| DeepSeek V4.1 Flash || Gratis dan berbayar || Coding dan tool use cepat, konteks 1M
+|-
+| DeepSeek V4.1 Flash Slow || Gratis dan berbayar || Model sama, aliran lebih lambat; default di akses terbatas tanpa paket, dan di Chat
+|-
+| Solar Mini 4 || Gratis dan berbayar || Upstage, ringkas, konteks 500K, hanya teks
+|-
+| Solar Pro 4 || Gratis dan berbayar || Upstage, lebih besar, konteks 500K, hanya teks
+|-
+| Muse Spark 1.3 || Berbayar || Model agentic coding Meta, konteks 1M
+|-
+| Muse Ember || Berbayar || Model coding cepat Meta, konteks 375K
+|-
+| Claude Haiku 5.5 || Berbayar || Model cepat Anthropic, konteks 100K
+|-
+| GPT-6.1 Terra || Berbayar || OpenAI, dua sesi sehari, konteks 1M, gambar
+|-
+| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Eksperimen gratis || Tingkat akses terbatas
+|}
+
+* Tiap model memakan jam sesuai tarif di picker: model satu-jam memakai satu jam saldo, model tiga-jam memakai tiga, dan model eksperimen gratis tidak memakai saldo.
+* Gemini 3.1 Flash Lite mengerjakan tugas khusus seperti mencari file, bukan tampil di picker utama.
+* Sudah pensiun: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
+* Desktop juga bisa menjalankan agent Claude Code dan Codex yang terpasang lokal dengan akun provider-mu sendiri; itu terpisah dari katalog ini.
+* Di ponsel model picker memang dihapus: mobile hanya memakai DeepSeek, supaya layarnya lebih sederhana.
+* Soal data: sebuah model hanya boleh dipakai untuk pelatihan kalau pemberitahuannya bilang begitu. Terpisah dari itu, data pemakaian bisa melatih model pemilihan iklan; file project dan repository terhubung tidak diberikan ke penyedia iklan.
+
+== Apa isi tiap paket? ==
+{| class="wikitable sortable"
+! Paket !! Akses penuh !! Akses terbatas !! Bonus (penuh / terbatas)
+|-
+| Starter || 50 || 21 || +30 / +20
+|-
+| Plus || 80 || 40 || +50 / +40
+|-
+| Pro || 130 || 70 || +100 / +80
+|}
+
+* Akses terbatas tetap bisa dipakai: jatahnya lebih kecil, bukan diblokir. Jatah paket berbayar ikut pembagian penuh atau terbatas, bukan daftar negaranya.
+* Jatah harian dipakai dulu sebelum dompetmu. Isinya penuh lagi tengah malam di zona waktu reset akunmu, dan sisa jam tidak terbawa ke besok.
+* Setelah 7 hari berturut-turut, hari yang memenuhi syarat menambah 3 jam ke jatah harian. Bonusnya masuk saat pesan pertamamu hari itu dan hangus saat reset kalau tidak dipakai.
+* Paket yang dibeli sebelum 9 November 2026 mempertahankan bonus lamanya selama langganan berjalan. Upgrade mempertahankan bonus sekarang dan menambah bonus paket baru. Membatalkan paket bulanan mengakhiri manfaatnya saat itu juga; membatalkan paket tahunan menghentikan perpanjangan, tapi akses tetap sampai tahun yang sudah dibayar habis.
+* Jam dari referral dan bounty masuk ke dompet dan dipakai setelah jatah harian.
+
+== Apa arti istilah-istilahnya? ==
+; Agent
+: AI yang mengerjakan tugas, bukan cuma menjawab. Di sini namanya Buffy.
+; Model
+: Bagian yang menulis teks dan memilih tindakan berikutnya; model berbeda memakan jam berbeda.
+; Tool
+: Satu tindakan konkret: membaca file, mencari teks, menjalankan perintah.
+; Runtime
+: Di mana pekerjaan terjadi — komputermu atau workspace awan.
+; Prompt
+: Pesan yang kamu tulis untuk meminta sesuatu.
+; Repo (repository)
+: Folder project yang dilacak git, jadi perubahan bisa diperiksa atau dibatalkan.
+; Terminal
+: Jendela teks tempat perintah diketik. Freebuff bisa memakainya untukmu.
+; Build
+: Mengubah kode sumber jadi sesuatu yang bisa jalan, lalu memeriksanya.
+; Sandbox / workspace
+: Tempat terpisah untuk menjalankan project. Cloud punya; Desktop tidak mengisolasi OS-mu.
+; Mode
+: Plan (hanya baca) atau Build (bisa mengubah file).
+; Subagent
+: Agent pembantu dengan satu tugas sempit; hasilnya kembali ke agent utama.
+; Base3
+: Nama siklus utama Freebuff: satu agent menyelidiki, mengubah dan memverifikasi dengan tool-nya sendiri.
+; Freebucks
+: Satuan kredit lama; saldo sekarang dalam jam, dan 1 jam = 5 Freebucks.
+; Link referral
+: Link yang memberi kredit ke orang yang membagikannya saat pengguna baru mendaftar.
+
+== Dari mana ini diambil? ==
+* [https://freebuff.com Website resmi Freebuff] — model, paket, toko.
+* [https://github.com/CodebuffAI/freebuff README di GitHub] — katalog, jam dan Freebucks, tingkat akses, pemberitahuan data, lisensi.
+* [https://docs.freebuff.page/working-with-the-agent Dokumentasi Freebuff] — siklus, mode, grup tool, batas pembantu.
+* [https://docs.freebuff.page/cli/ Dokumentasi Freebuff — CLI] — install, versi Node, lokasi config.
+* [https://discord.com/channels/1272267565254840401/1551590914768511007 FAQ Discord Freebuff — Hour Limits] — jam gratis per wilayah, kuota paket, bonus streak, aturan reset (Niko, 21 September 2026, disunting 22 November 2026).
+* [https://discord.com/channels/1272267565254840401/1573255409647489115 Jawaban Discord soal model picker di ponsel] — picker dihapus untuk menyederhanakan UI mobile (Niko, 20 November 2026).
+* Jawaban panjang dan cerita lengkap tiap halaman juga ada di [[Freebuff (Bahasa Indonesia)|halaman Freebuff]] dan [[What's new (Bahasa Indonesia)|Yang baru]].
+
+''Dicek pada 24 November 2026. Harga, nama model dan batas harian sering berubah: angka di sini adalah potret dari sumber di atas, dan FAQ Discord Freebuff adalah tempat angka terbarunya.''
