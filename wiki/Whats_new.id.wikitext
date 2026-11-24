@@ -9,7 +9,7 @@
 | style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |}
 
-'''Yang baru''' berisi perubahan Freebuff paling akhir, yang terbaru di atas: 15 entri untuk 23–24 November 2026 (14 perubahan kode — entri 0.2.37 memuat catatan rilisnya — plus catatan rilis 0.2.38; keduanya juga muncul di daftar postingan tim di bawah), 18 postingan dari Discord resmi (catatan rilis dan pengumuman, 5–24 November), lalu postingan terbaru dari blog resminya. Tiap baris ada tanggalnya dan ada link ke sumber aslinya, jadi kamu bisa memeriksa sendiri, tidak perlu percaya halaman ini begitu saja.
+'''Yang baru''' berisi perubahan Freebuff paling akhir, yang terbaru di atas: 15 entri untuk 23–24 November 2026 (14 perubahan kode — entri 0.2.37 memuat catatan rilisnya — plus catatan rilis 0.2.38), lalu postingan terbaru dari blog resminya. 18 postingan Discord dari timnya dipindah ke [[Detail (Bahasa Indonesia)|halaman Detail]] supaya halaman ini tidak kepanjangan, tapi yang terbaru diringkas di bawah. Tiap baris ada tanggalnya dan ada link ke sumber aslinya, jadi kamu bisa memeriksa sendiri, tidak perlu percaya halaman ini begitu saja.
 
 ''Tulisan berwarna kuning adalah link. Halaman ini ditulis untuk orang yang belum pernah ngoding. Freebuff berubah hampir setiap hari, jadi daftar ini adalah potret satu waktu, bukan siaran langsung.''
 
@@ -22,7 +22,9 @@
 |-
 | Item terbaru yang dicatat || 24 November 2026, 19:06 UTC
 |-
-| Isi halaman ini || 15 entri 23–24 Nov (14 perubahan kode, satu digabung dengan catatan rilisnya, plus 1 catatan rilis; sengaja muncul dua kali) dan 18 postingan Discord (5–24 Nov)
+| Isi halaman ini || 15 entri 23–24 Nov (14 perubahan kode, satu digabung dengan catatan rilisnya, plus 1 catatan rilis)
+|-
+| Postingan tim || 18 catatan rilis dan pengumuman Discord (5–24 Nov), ada di [[Detail (Bahasa Indonesia)|halaman Detail]]
 |-
 | Postingan blog terbaru || 16 November 2026
 |-
@@ -59,37 +61,11 @@ Commit bukan pengumuman resmi. Sebagian isinya urusan dapur yang tidak akan kamu
 * '''00:20 — Template mendapat pratinjau langsung.''' Aplikasi dari template bisa dilihat berjalan sebelum kamu menyelesaikannya. ([https://freebuff-changelog.nordicnode.workers.dev/c/4dbf208cbdff entry] · [https://github.com/CodebuffAI/freebuff/commit/4dbf208cbdff945fe8a0141e1b31b14d1c802f70 commit]) '''Kamu akan lihat:''' pratinjau, bukan halaman kosong.
 
 == Apa yang diumumkan tim? ==
-Daftar di atas mengikuti kode. Tab ini mengikuti orangnya: tim Freebuff juga menulis catatan rilis untuk tiap versi aplikasi, dan pengumuman, di Discord resmi. Ini '''18 postingan''' dari kedua kanal itu, yang terbaru di atas, masing-masing dengan tanggal dan tautan ke pesannya sendiri.
+Catatan rilis dan pengumuman dari timnya sendiri — 18 postingan dari dua kanal Discord resmi antara 5 dan 24 November 2026 — dikumpulkan di [[Detail (Bahasa Indonesia)#Apa yang diumumkan tim?|halaman Detail]], karena daftarnya panjang.
 
-* Catatan rilis ada di '''📜┃changelog''', yang dibuka 19 November 2026 — jadi tidak ada riwayat lebih lama.
-* Pengumuman ada di '''📯┃announcements''', dibaca mundur sampai 5 November 2026.
+Versi singkat: rilis terbaru adalah '''CLI 0.2.38''' (24 November, 19:06 UTC — context window di atas 400k dengan API key sendiri), setelah '''CLI 0.2.37''' pagi hari yang sama. Sebelumnya ada Desktop 0.0.205, Android 0.1.3 dan dua pembaruan iOS. Di sisi pengumuman, yang terbaru adalah sesi 1-on-1 dengan Sam Park, Artifacts untuk semua orang, toko merchandise, dan tangga hadiah referral.
 
-=== Catatan rilis — 📜┃changelog ===
-* '''24 November 2026, 19:06 UTC — CLI 0.2.38.''' Context window di atas 400k bisa dipakai kalau kamu memakai API key sendiri. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574863796206444626 postingan])
-* '''24 November 2026, 09:26 UTC — CLI 0.2.37.''' Judul chat ditulis model; model picker menjelaskan alasan sebuah model dibatasi, bukan menyalahkan koneksi; menutup terminal tidak lagi dianggap crash; sign-in tidak perlu klik "Connect"; resume setelah Esc kembali ke keadaan yang terputus; dua baris nyasar hilang dari kotak selamat datang; pesan batas harian tidak lagi menyebut refund. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574717736565739592 postingan])
-* '''23 November 2026, 08:15 UTC — Desktop 0.0.205.''' Project template baru langsung jalan di komputermu, jadi pratinjau muncul seketika; setting status "Playing" kembali; browser ukuran ponsel dan tablet pas dengan panelnya dan klik jatuh di tempat yang kamu tunjuk; panel browser tidak lagi menyembunyikan halamannya saat ukuran berubah. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574337558329036952 postingan])
-* '''20 November 2026, 19:45 UTC — Android 0.1.3.''' Prompt penilaian; tombol kirim tetap terlihat di layar sempit; notifikasi push dan lonceng inbox; streak harian dengan tema Streak Fire; dialog bagikan di hari milestone; pesan antre menunggu giliran yang sedang berjalan. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573424078499356675 postingan])
-* '''20 November 2026, 19:44 UTC — iOS 1.1.4.''' Tombol sign-in provider di tengah; izin notifikasi mengikuti pengaturan perangkat; SVG workspace bisa dibuka di chat dan penampil file. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573423939445723259 postingan])
-* '''20 November 2026, 07:50 UTC — iOS 1.1.3.''' Transkrip berhenti melompat ke bawah saat kamu membaca; model picker dapat tinggi penuh; Your sites dan Browse templates; prompt penilaian; turn review; satu model ditampilkan di picker; streak harian; tema default mengikuti perangkat. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573244123836842145 postingan])
-* '''19 November 2026, 05:38 UTC — CLI 0.2.36.''' Perintah <code>freebuff doctor</code>; <code>/compact</code> dan meter konteks; gambar muncul saat membaca file; <code>-l</code> dan <code>-c</code> di code search bekerja lagi; markdown streaming tampil sambil masuk; batas langkah lebih tinggi, dan giliran tanpa kemajuan berhenti. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848608422658169 postingan])
-* '''19 November 2026, 05:38 UTC — Desktop 0.0.204.''' Bundle yang terpasang dipakai di menit idle pertama; layar hitam diperbaiki; template picker dan judul Sites diperbaiki; hijau default lebih segar; alamat situs baru memakai nama project; template tetap di bawah Your sites; ada peringatan sebelum Publish menimpa situs chat lain; rekaman tanpa suara memberi tahu. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848477648588864 postingan])
-
-=== Pengumuman — 📯┃announcements ===
-* '''23 November 2026, 21:42 UTC.''' Sesi 1-on-1 dengan Sam Park bisa dipesan lewat cal.com; slotnya sedikit tiap hari. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1574540586395111434 postingan])
-* '''19 November 2026, 23:48 UTC.''' Artifacts untuk semua orang — Docs, Slides, Sheets, Design, Data Visualizer dan Whiteboard — bisa dibagikan lewat link, dengan kolaborasi realtime versi beta; image generation juga dibuka untuk semua pengguna. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1573122787227336744 postingan])
-* '''14 November 2026, 21:19 UTC.''' Toko merchandise dibuka di freebuff.com/store, dengan kode BLACKFRIDAY untuk potongan 30%. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1571273306139795507 postingan])
-* '''12 November 2026, 08:45 UTC.''' Tangga hadiah referral (merch, AirPods Max, MacBook Pro); referral sebelum perubahan ini ikut dihitung; pekerjaan performa membuat aplikasi web dan desktop lebih ringan. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1570358960844836947 postingan])
-* '''10 November 2026, 02:02 UTC.''' Desktop 0.0.202: local MCP kembali dan bisa dipakai dari sesi cloud serta ponsel; panel perubahan menampilkan status pull request dan branch; tab Overview baru; alur arsip dan hapus project dirapikan. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569894974663688212 postingan])
-* '''9 November 2026, 23:08 UTC.''' Gangguan singkat; layanan kembali tak lama setelahnya. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569488976274915512 postingan])
-* '''9 November 2026, 19:49 UTC.''' Freebuff hadir di iOS dan Android, termasuk bekerja jarak jauh pada project lokal di desktop; setiap akun mendapat jam DeepSeek gratis tiap hari. Kalimat jatah di sini sudah diganti belakangan — lihat catatan di bawah. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569438774323322941 postingan])
-* '''7 November 2026, 01:53 UTC.''' Chat mode jadi default untuk chat lepas dan mendapat projects; cloud browser gratis untuk Chat dan Code; Remote mode untuk project lokal di desktop; Buffy jadi maskot; update desktop melambat jadi paling sering sekali seminggu. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568443247368339560 postingan])
-* '''5 November 2026, 22:59 UTC.''' Penyedia infrastruktur (Render) mati; pemakaian semua orang di-reset. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568036999770677304 postingan])
-* '''5 November 2026, 08:24 UTC.''' Pilihan model disederhanakan ke DeepSeek Flash: wilayah Tier 1 dapat pemakaian tanpa batas, pengguna lama masih bisa membuka "Show all models", pengguna baru mulai dari DeepSeek Flash, dan perbaikan harness memotong waktu tugas sekitar 20%. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1567816945276026931 postingan])
-
-=== Hati-hati membaca angka di sini ===
-Postingan 9 November menyebut jatah gratis "5 jam sehari", dan paket berbayar 21 jam model lambat dengan 7 jam model cepat. Keduanya sudah diganti tabel jam di FAQ Discord pada 22 November 2026, dan tabel itulah yang dipakai bagian Biaya di wiki ini. Pengumuman adalah catatan apa yang dikatakan hari itu, bukan daftar harga yang berlaku sekarang.
-
-''Postingan ini dibaca dari dua kanal Discord pada 24 November 2026; tiap baris menautkan pesannya sendiri, jadi kalimatnya bisa kamu periksa ke sumbernya.''
+Satu aturan yang perlu diingat: postingan 9 November menyebut jatah gratis "5 jam sehari", dan FAQ Discord menggantinya pada 22 November dengan tabel jam per wilayah — tabelnya ada di [[Freebuff Wiki (Bahasa Indonesia)#Berapa biayanya?|Beranda]].
 
 == Apa kata blog? ==
 Blog resmi jauh lebih sering menerbitkan panduan dan perbandingan daripada catatan rilis, jadi ini postingan terbaru, bukan fitur terbaru.
