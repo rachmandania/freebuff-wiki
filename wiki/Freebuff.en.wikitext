@@ -4,9 +4,9 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |}
 
 {| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
@@ -38,9 +38,9 @@
 ''Everything is on this page — just scroll. Words in yellow are links.''
 
 == Contents ==
-[[#Overview|1. Overview]] · [[#Platforms|2. Platforms]] · [[#Capabilities|3. Capabilities]] · [[#Tools|4. What tools it has]] · [[#How to start|5. How to start]] · [[#Cost|6. Cost, hours and models]] · [[#Limits|7. Limits]] · [[#FAQ|8. FAQ]] · [[#Glossary|9. Glossary]] · [[#Sources|10. Sources]]
+[[#What is Freebuff?|1. What is Freebuff?]] · [[#Where can I use it?|2. Where can I use it?]] · [[#What can it do?|3. What can it do?]] · [[#How much does it cost?|4. How much does it cost?]] · [[#How do I start?|5. How do I start?]]
 
-== Overview ==
+== What is Freebuff? ==
 Freebuff is not a search engine and not a chat box that only writes text back. The work is a loop: '''request → context → decision → tool call → result → next step'''.
 
 Four layers are easy to collapse into one word:
@@ -58,7 +58,7 @@ Four layers are easy to collapse into one word:
 
 Freebuff is made by the Codebuff team on top of [https://codebuff.com Codebuff], an open multi-agent framework, and is often described as the free alternative to Claude Code, Codex CLI, Cursor, Windsurf and Devin. The source is public ([https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff], Apache-2.0), and Freebuff reads <code>AGENTS.md</code> and <code>CLAUDE.md</code> so project rules you already wrote still apply.
 
-== Platforms ==
+== Where can I use it? ==
 {| class="wikitable sortable"
 ! Version !! What it is
 |-
@@ -79,7 +79,7 @@ Freebuff is made by the Codebuff team on top of [https://codebuff.com Codebuff],
 | Cowork || A separate surface for non-coding work with the same agent.
 |}
 
-== Capabilities ==
+== What can it do? ==
 '''Understand a project'''
 * Map files and explain how the pieces fit together
 * Search for a symbol, string or path; read big files by line range
@@ -111,7 +111,7 @@ Freebuff is made by the Codebuff team on top of [https://codebuff.com Codebuff],
 '''Work in parallel'''
 * Up to 6 helpers per spawn request; up to 20 code subagents at once with Projects access
 
-== Tools ==
+== What tools does it have? ==
 The exact set depends on the surface, the mode, your connections and the run.
 
 {| class="wikitable"
@@ -144,7 +144,7 @@ The exact set depends on the surface, the mode, your connections and the run.
 
 Plan mode makes the writing tools refuse. Some helpers — full code subagents — are offered only with Projects access, not in Plan and not on sponsored runs.
 
-== How to start ==
+== How do I start? ==
 # Open [https://freebuff.com freebuff.com] and download Desktop, or open the web app.
 # Or: <code>npm install -g freebuff</code>, then run <code>freebuff</code> inside a project folder.
 # Open an existing project, or start an empty folder.
@@ -156,43 +156,17 @@ Plan mode makes the writing tools refuse. Some helpers — full code subagents �
 * '''Boundary''' — what it may touch and what it must leave alone.
 * '''Check''' — the command, test or URL that proves it.
 
-== Cost ==
+== How much does it cost? ==
 Freebuff is funded by '''text ads''', not a subscription; paid plans add more model time.
 
 * Balances are shown in '''hours''' since 2026-10-15. '''1 hour = 5 Freebucks.''' Freebucks still appear as the credit unit.
 * A model costs hours at the rate in the picker: one-hour model = one hour of balance, three-hour model = three, free experimental models = none.
-* Supported regions get full access. Other regions and VPN/proxy users get '''limited access''': 5 hours a day, or 4 with a VPN or proxy, spent first on every model.
+* The free allowance depends on where you are: 30 hours a day in the United States, 21 or 12 in the countries listed there, 5 elsewhere, and 4 on a VPN or proxy. The full table is on the [[Freebuff Wiki#How much does it cost?|Home page]], and the daily pool is spent before your wallet.
 * Referrals and bounties earn extra hours, which go into a wallet and are used after the daily allowance.
 
-Model catalog (changes often):
+See the [[Details|Details page]] for the model list, plan bonuses and the glossary.
 
-{| class="wikitable sortable"
-! Model !! Access !! Notes
-|-
-| DeepSeek V4.1 Flash || Free + paid || Fast coding and tool use, 1M context
-|-
-| DeepSeek V4.1 Flash Slow || Free + paid || Same model streamed slower; default at limited access without a plan, and in Chat
-|-
-| Solar Mini 4 || Free + paid || Upstage, compact, 500K context, text only
-|-
-| Solar Pro 4 || Free + paid || Upstage, larger, 500K context, text only
-|-
-| Muse Spark 1.3 || Paid || Meta agentic coding model, 1M context
-|-
-| Muse Ember || Paid || Meta fast coding model, 375K context
-|-
-| Claude Haiku 5.5 || Paid || Fast Anthropic model, 100K context
-|-
-| GPT-6.1 Terra || Paid || OpenAI, two sessions a day, 1M context, images
-|-
-| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Free experimental || Limited-access tiers
-|}
-
-Gemini 3.1 Flash Lite does specialist jobs such as file finding instead of appearing in the main picker. Retirements already happened: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
-
-Desktop can also run locally installed Claude Code and Codex agents on your own provider account; those are separate from Freebuff's catalog.
-
-== Limits ==
+== What are its limits? ==
 * Vague requests give vague results.
 * It will not type your passwords or log in for you.
 * No OS sandbox on Desktop: commands use your user's rights and can reach beyond the opened folder. Administrator rights are never granted implicitly.
@@ -203,7 +177,7 @@ Desktop can also run locally installed Claude Code and Codex agents on your own 
 * Free hours are limited per day.
 * Context is finite: long chats get compressed into a summary, so restate hard requirements.
 
-== FAQ ==
+== Common questions ==
 ; Do I need to know programming?
 : No, but clear requests and a checkable result matter more than vocabulary.
 
@@ -222,23 +196,7 @@ Desktop can also run locally installed Claude Code and Codex agents on your own 
 ; What is base3?
 : The name of Freebuff's main agent loop: one agent investigates, edits and verifies with its own tools.
 
-== Glossary ==
-; Agent / model / tool / runtime
-: The four layers: role and instructions, the thing generating text, one concrete action, and where it runs.
-; Plan / Build
-: Read-only mode, and the mode allowed to change files.
-; Subagent
-: A helper given one narrow job; its result returns to the main agent.
-; Freebucks
-: Credit unit; balances are in hours, 1 hour = 5 Freebucks.
-; Sandbox
-: An isolated place to run work. Cloud has one; Desktop does not isolate your OS.
-; AGENTS.md
-: A file where a project states its own rules and verification commands.
-; Referral link
-: A link that credits whoever shared it when a new user signs up.
-
-== Sources ==
+== Where does this page come from? ==
 * [https://freebuff.com Freebuff official site] — products, models, plans, store.
 * [https://github.com/CodebuffAI/freebuff README] — catalog, hours and Freebucks, access tiers, data notice, licence.
 * [https://docs.freebuff.page/working-with-the-agent Docs — working with the agent] — loop, modes, tool groups, helper limits.
