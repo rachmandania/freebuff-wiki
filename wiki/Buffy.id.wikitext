@@ -4,9 +4,9 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |}
 
 {| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
@@ -28,9 +28,9 @@
 ''Semua isi ada di halaman ini — tinggal scroll. Tulisan berwarna kuning adalah link.''
 
 == Daftar isi ==
-[[#Siapa Buffy|1. Siapa Buffy]] · [[#Cara kerja|2. Cara kerja]] · [[#Agent pembantu|3. Agent pembantu]] · [[#Mode|4. Mode dan perintah]] · [[#Batasan|5. Batasan]] · [[#Trivia|6. Trivia dan sumber]]
+[[#Siapa Buffy?|1. Siapa Buffy?]] · [[#Bagaimana cara kerjanya?|2. Bagaimana cara kerjanya?]] · [[#Apa itu agent pembantu?|3. Apa itu agent pembantu?]] · [[#Mode apa saja yang ada?|4. Mode apa saja yang ada?]]
 
-== Siapa Buffy ==
+== Siapa Buffy? ==
 Buffy adalah agent utama sekaligus orkestrator: ia memutuskan apa yang perlu dibaca, file mana yang perlu diubah, perintah mana yang perlu dijalankan, dan kapan sebuah tugas kecil diserahkan ke pembantu.
 
 Buffy bukan karakter dengan cerita latar. Ia nama kerja dari agent-nya, dan nama yang sama dipakai untuk orkestrator di [https://codebuff.com/docs Codebuff], framework yang menjadi dasar Freebuff.
@@ -43,7 +43,7 @@ Yang bisa dijangkau Buffy (tergantung permukaan, mode dan koneksimu):
 * Aplikasi yang kamu hubungkan, seperti GitHub, Linear, Notion atau Google Drive
 * Server MCP yang kamu tambahkan dan setujui
 
-== Cara kerja ==
+== Bagaimana cara kerjanya? ==
 Siklus utama Freebuff bernama '''base3''': satu agent menyelidiki, mengubah dan memverifikasi dengan tool-nya sendiri. Satu giliran berjalan begini:
 
 # '''Kamu minta''' sesuatu, dengan kata-katamu sendiri.
@@ -54,7 +54,7 @@ Siklus utama Freebuff bernama '''base3''': satu agent menyelidiki, mengubah dan 
 
 Instruksinya menyuruh agent memeriksa hasilnya sendiri dan melaporkan pemeriksaan yang tidak bisa dijalankan. Itu aturan yang ia ikuti, bukan audit independen: kalau jawabannya bilang "sudah diperbaiki", buktinya adalah diff dan perintah yang benar-benar dijalankan.
 
-== Agent pembantu ==
+== Apa itu agent pembantu? ==
 Agent pembantu adalah tambahan pada siklus utama, bukan bentuk default satu giliran. Saat peluncuran, Freebuff membawa '''9 subagent khusus''' yang diorkestrasi otomatis; yang disebut namanya antara lain:
 
 * '''code-reviewer''' — membaca ulang perubahan dan mencari masalah.
@@ -69,7 +69,7 @@ Batasnya, dari dokumentasi:
 * Subagent kode penuh tidak ditawarkan di mode Plan dan tidak di sesi bersponsor.
 * Pekerjaan kecil atau saling terkait biasanya lebih cepat dikerjakan agent utama sendiri.
 
-== Mode ==
+== Mode apa saja yang ada? ==
 {| class="wikitable"
 ! Mode !! Yang boleh dilakukan Buffy
 |-
@@ -90,7 +90,7 @@ Pintasan di chat:
 
 Alur yang didokumentasikan dari ide kabur sampai perubahan yang bisa direview: <code>/interview</code> → <code>/plan</code> → implementasi → <code>/review</code>.
 
-== Batasan ==
+== Apa batasnya? ==
 * Ia tidak bisa membaca pikiranmu; instruksi kabur menghasilkan diff kabur.
 * Ia tidak bisa login untukmu atau mengetik password-mu — lebih baik kamu sendiri yang mengetik rahasia.
 * Ia tidak bisa menjamin kode tanpa cela; periksa apa pun yang penting.
@@ -99,13 +99,13 @@ Alur yang didokumentasikan dari ide kabur sampai perubahan yang bisa direview: <
 * Jawaban tergantung model yang dipakai sesi itu.
 * Desktop bukan sandbox: perintah berjalan dengan hak user-mu.
 
-== Trivia ==
+== Apa lagi yang perlu diketahui? ==
 * "Buffy" juga nama '''agent orkestrator''' di [https://codebuff.com/docs Codebuff], framework yang menjadi dasar Freebuff.
 * Nama ini muncul di merchandise resmi, termasuk kaos "Buffy on Fire".
 * Freebuff memakai agent khusus, bukan mengirim semua tugas ke satu model dan satu prompt.
 * Siklus utamanya punya nama sendiri: '''base3'''.
 
-== Sumber ==
+== Dari mana halaman ini diambil? ==
 * [https://freebuff.com Website resmi Freebuff] dan [https://freebuff.com/store toko].
 * [https://docs.freebuff.page/working-with-the-agent Dokumentasi — bekerja dengan agent] — siklus, mode, pembantu, grup tool.
 * [https://docs.freebuff.page/cli/ Dokumentasi — CLI] — slash command dan flag.

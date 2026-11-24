@@ -4,9 +4,9 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |}
 
 {| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
@@ -28,9 +28,9 @@
 ''Everything is on this page — just scroll. Words in yellow are links.''
 
 == Contents ==
-[[#Who is Buffy|1. Who is Buffy]] · [[#How it works|2. How it works]] · [[#Helper agents|3. Helper agents]] · [[#Modes|4. Modes and commands]] · [[#Limits|5. Limits]] · [[#Trivia|6. Trivia and sources]]
+[[#Who is Buffy?|1. Who is Buffy?]] · [[#How does it work?|2. How does it work?]] · [[#What are helper agents?|3. What are helper agents?]] · [[#What modes are there?|4. What modes are there?]]
 
-== Who is Buffy ==
+== Who is Buffy? ==
 Buffy is the main agent and the orchestrator: it decides what to read, which file to change, which command to run, and when to hand a smaller job to a helper.
 
 Buffy is not a character with a backstory. It is the working name of the agent, and the same name is used for the orchestrator in [https://codebuff.com/docs Codebuff], the framework Freebuff is built on.
@@ -43,7 +43,7 @@ What Buffy can reach (depending on the surface, the mode and your connections):
 * The apps you connected, such as GitHub, Linear, Notion or Google Drive
 * MCP servers you added and approved
 
-== How it works ==
+== How does it work? ==
 Freebuff's main loop is called '''base3''': one agent investigates, edits and verifies with its own tools. A turn looks like this:
 
 # '''You ask''' for something, in your own words.
@@ -54,7 +54,7 @@ Freebuff's main loop is called '''base3''': one agent investigates, edits and ve
 
 The instructions tell the agent to check its own result and to report checks it could not run. That is a rule it follows, not an independent audit: when a reply says "fixed", the evidence is the diff and the commands that actually ran.
 
-== Helper agents ==
+== What are helper agents? ==
 Helper agents are additions to the main loop, not the default shape of a turn. At launch Freebuff shipped '''9 specialized subagents''' orchestrated automatically; named ones include:
 
 * '''code-reviewer''' — reads a change back and looks for problems.
@@ -69,7 +69,7 @@ Limits, from the documentation:
 * Full code subagents are not offered in Plan mode and not on sponsored runs.
 * Small or tightly coupled work is usually faster done by the main agent alone.
 
-== Modes ==
+== What modes are there? ==
 {| class="wikitable"
 ! Mode !! What Buffy may do
 |-
@@ -90,7 +90,7 @@ Shortcuts in the chat:
 
 The documented flow from a vague idea to a reviewable change is: <code>/interview</code> → <code>/plan</code> → implement → <code>/review</code>.
 
-== Limits ==
+== What are its limits? ==
 * It cannot read your mind; a vague brief gives a vague diff.
 * It cannot log in for you or type your passwords — better that you type secrets yourself.
 * It cannot promise perfect code; check anything important.
@@ -99,13 +99,13 @@ The documented flow from a vague idea to a reviewable change is: <code>/intervie
 * Answers depend on the model the session is using.
 * Desktop is not a sandbox: commands run with your user's rights.
 
-== Trivia ==
+== What else is worth knowing? ==
 * "Buffy" is also the name of the '''orchestrator agent''' in [https://codebuff.com/docs Codebuff], the framework Freebuff is built on.
 * The name appears in official merchandise, including the "Buffy on Fire" T-shirt.
 * Freebuff uses specialized agents rather than sending every task through one model and one prompt.
 * The main loop has its own name: '''base3'''.
 
-== Sources ==
+== Where does this page come from? ==
 * [https://freebuff.com Freebuff official site] and [https://freebuff.com/store store].
 * [https://docs.freebuff.page/working-with-the-agent Docs — working with the agent] — loop, modes, helpers, tool groups.
 * [https://docs.freebuff.page/cli/ Docs — CLI] — slash commands and flags.
