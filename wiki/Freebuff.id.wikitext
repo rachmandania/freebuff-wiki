@@ -1,0 +1,252 @@
+<div style="text-align:right; font-size:90%; border-bottom:1px solid #c8ccd1; padding:2px 0; margin-bottom:10px;">🌐 '''Bahasa Indonesia''' &nbsp;•&nbsp; [[Freebuff|English]]</div>
+
+{| style="width:100%; border:1px solid #c8ccd1; border-radius:8px; background:rgba(255,255,255,0.04); margin-bottom:14px; font-size:95%;"
+|-
+! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — ini link, klik untuk membuka halamannya
+|-
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]]
+|-
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]]
+|}
+
+{| class="wikitable" style="float:right; width:280px; margin:0 0 12px 12px;"
+! colspan="2" | Freebuff
+|-
+| '''Jenis''' || AI coding agent
+|-
+| '''Dibuat oleh''' || Tim Codebuff (codebuff.com)
+|-
+| '''Dibangun di atas''' || Framework Codebuff
+|-
+| '''Siklus utama''' || base3
+|-
+| '''Platform''' || Desktop, CLI, Web, Cloud, Chat, Mobile, Website Builder, Cowork
+|-
+| '''Mode''' || Plan (hanya baca), Build (bisa mengubah file)
+|-
+| '''Harga''' || Gratis, dibiayai iklan teks; ada paket berbayar
+|-
+| '''Lisensi''' || Apache-2.0
+|-
+| '''Agent''' || [[Buffy (Bahasa Indonesia)|Buffy]]
+|-
+| '''Website''' || [https://freebuff.com freebuff.com]
+|}
+
+'''Freebuff''' adalah AI coding agent gratis. Kamu menjelaskan keinginanmu dengan bahasa sehari-hari, lalu ia bekerja di project yang sungguhan: membaca kode, mengubah file, menjalankan program, memeriksa hasilnya dan melapor kembali. Agent yang mengerjakannya bernama '''[[Buffy (Bahasa Indonesia)|Buffy]]'''.
+
+''Semua isi ada di halaman ini — tinggal scroll. Tulisan berwarna kuning adalah link.''
+
+== Daftar isi ==
+[[#Ringkasan|1. Ringkasan]] · [[#Platform|2. Platform]] · [[#Kemampuan|3. Kemampuan]] · [[#Tool|4. Tool yang tersedia]] · [[#Cara mulai|5. Cara mulai]] · [[#Biaya|6. Biaya, jam dan model]] · [[#Batasan|7. Batasan]] · [[#Pertanyaan umum|8. Pertanyaan umum]] · [[#Glosarium|9. Glosarium]] · [[#Sumber|10. Sumber]]
+
+== Ringkasan ==
+Freebuff bukan mesin pencari dan bukan kotak chat yang hanya menulis teks. Pekerjaannya adalah siklus: '''permintaan → konteks → keputusan → panggilan tool → hasil → langkah berikutnya'''.
+
+Empat lapisan yang mudah tertukar:
+{| class="wikitable"
+! Lapisan !! Yang ia tentukan
+|-
+| Model || Menghasilkan jawaban dan memilih tindakan berikutnya
+|-
+| Agent || Memberi model peran, instruksi, konteks project dan tool
+|-
+| Tool || Melakukan satu tindakan konkret: baca file, cari teks, jalankan perintah
+|-
+| Runtime || Di mana tindakan itu terjadi — komputermu atau workspace awan
+|}
+
+Freebuff dibuat tim Codebuff di atas [https://codebuff.com Codebuff], framework multi-agent terbuka, dan sering disebut alternatif gratis untuk Claude Code, Codex CLI, Cursor, Windsurf dan Devin. Kodenya publik ([https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff], Apache-2.0), dan Freebuff membaca <code>AGENTS.md</code> serta <code>CLAUDE.md</code> sehingga aturan project yang sudah kamu tulis tetap berlaku.
+
+== Platform ==
+{| class="wikitable sortable"
+! Versi !! Apa itu
+|-
+| Desktop || macOS, Windows dan Linux. Menjalankan agent di folder lokal; agent paralel masing-masing dapat workspace sendiri.
+|-
+| CLI || <code>npm install -g freebuff</code>, lalu <code>freebuff</code>. Node 16+ menurut dokumentasi, 18+ menurut halaman CLI; bisa dipakai lewat SSH dan di tmux.
+|-
+| Web || Versi browser di [https://freebuff.com/app freebuff.com/app], fokus membangun dan merilis aplikasi full-stack.
+|-
+| Cloud || Menjalankan agent pada repository GitHub mana pun, dengan sandbox, preview, terminal dan deploy.
+|-
+| Chat || Chat AI gratis untuk pertanyaan dan riset, tanpa project.
+|-
+| Mobile || Aplikasi iOS dan Android; ikuti dan lanjutkan chat yang dimulai di Desktop.
+|-
+| Website Builder || Aplikasi dari prompt dengan hosting terkelola dan URL hidup.
+|-
+| Cowork || Permukaan terpisah untuk pekerjaan non-coding dengan agent yang sama.
+|}
+
+== Kemampuan ==
+'''Memahami project'''
+* Memetakan file dan menjelaskan bagaimana bagian-bagiannya menyatu
+* Mencari simbol, teks atau path; membaca file besar per rentang baris
+
+'''Mengubah kode'''
+* Mengedit dengan penggantian yang harus cocok persis, atau menulis ulang file
+* Membuat file baru, merapikan file besar menjadi bagian kecil
+
+'''Menjalankan dan memeriksa'''
+* Perintah terminal: install, build, test, lint, skrip — dengan efek nyata
+* Menjalankan hook pemeriksaanmu sendiri kalau sudah dikonfigurasi
+* Preview situs yang sedang jalan, plus browser sungguhan untuk klik, mengetik, screenshot, error console dan network
+
+'''Merilis'''
+* Mempublikasikan situs dengan database, penyimpanan file dan login
+* Bekerja di repository GitHub terhubung dan membuka pull request kalau diminta
+
+'''Membuat konten'''
+* Dokumen, slide, spreadsheet dan diagram
+* Gambar dan rancangan halaman sederhana
+
+'''Mencari informasi'''
+* Web search plus membaca halaman; asisten riset terpisah untuk pertanyaan multi-sumber
+
+'''Memakai aplikasi lain'''
+* GitHub, Linear, Notion, Stripe, Vercel, Supabase, Sentry, PostHog, Resend, Google Drive/Docs/Sheets, Discord, Telegram
+* Server MCP yang kamu tambahkan dan setujui
+
+'''Kerja paralel'''
+* Sampai 6 pembantu per permintaan spawn; sampai 20 subagent kode sekaligus dengan akses Projects
+
+== Tool ==
+Set pastinya tergantung permukaan, mode, koneksi dan jalannya sesi.
+
+{| class="wikitable"
+! Grup !! Contoh
+|-
+| Cari dan baca || daftar file, glob, cari kode, baca rentang file
+|-
+| Edit || ganti yang cocok persis, tulis file utuh
+|-
+| Jalankan || perintah terminal
+|-
+| Pemeriksaan setelah perubahan || hook milikmu untuk file yang berubah
+|-
+| Web || web search, baca URL, asisten riset
+|-
+| Browser || navigasi, klik, mengetik, console, network, screenshot
+|-
+| Panel terminal || terminal yang kamu lihat dan bisa ketik sendiri
+|-
+| Aplikasi terhubung || integrasi yang kamu hubungkan
+|-
+| MCP || server yang kamu tambahkan dan setujui
+|-
+| Sites || buat, tambah storage, aktifkan auth, deploy, publish
+|-
+| Riset layanan || membandingkan layanan pihak ketiga; pendaftaran butuh persetujuanmu
+|-
+| Skills || memuat set instruksi bernama sesuai permintaan
+|}
+
+Mode Plan membuat tool penulisan menolak. Beberapa pembantu — subagent kode penuh — hanya tersedia dengan akses Projects, bukan di Plan dan bukan di sesi bersponsor.
+
+== Cara mulai ==
+# Buka [https://freebuff.com freebuff.com] dan unduh Desktop, atau buka versi web.
+# Atau: <code>npm install -g freebuff</code>, lalu jalankan <code>freebuff</code> di folder project.
+# Buka project yang ada, atau mulai folder kosong.
+# Mulai dari yang kecil: ''"Jelaskan project ini fungsinya apa."''
+# Lalu satu langkah sekali jalan, sambil membaca diff-nya.
+
+'''Beri instruksi seperti tiket:'''
+* '''Hasil''' — apa yang benar saat tugas selesai.
+* '''Batas''' — apa yang boleh disentuh dan apa yang harus dibiarkan.
+* '''Pemeriksaan''' — perintah, test atau URL yang membuktikannya.
+
+== Biaya ==
+Freebuff dibiayai '''iklan teks''', bukan langganan; paket berbayar menambah waktu model.
+
+* Saldo ditampilkan dalam '''jam''' sejak 2026-10-15. '''1 jam = 5 Freebucks.''' Freebucks masih dipakai sebagai satuan kredit.
+* Sebuah model memakan jam sesuai tarif di picker: model satu-jam = satu jam saldo, model tiga-jam = tiga, model eksperimen gratis = nol.
+* Region yang didukung mendapat akses penuh. Region lain dan pengguna VPN/proxy mendapat '''akses terbatas''': 5 jam sehari, atau 4 dengan VPN atau proxy, dipakai lebih dulu di setiap model.
+* Referral dan bounty menambah jam, masuk ke dompet, dan dipakai setelah jatah harian.
+
+Katalog model (sering berubah):
+
+{| class="wikitable sortable"
+! Model !! Akses !! Catatan
+|-
+| DeepSeek V4.1 Flash || Gratis + berbayar || Coding dan tool use cepat, konteks 1M
+|-
+| DeepSeek V4.1 Flash Slow || Gratis + berbayar || Model sama, aliran lebih lambat; default di akses terbatas tanpa paket, dan di Chat
+|-
+| Solar Mini 4 || Gratis + berbayar || Upstage, ringkas, konteks 500K, hanya teks
+|-
+| Solar Pro 4 || Gratis + berbayar || Upstage, lebih besar, konteks 500K, hanya teks
+|-
+| Muse Spark 1.3 || Berbayar || Model agentic coding Meta, konteks 1M
+|-
+| Muse Ember || Berbayar || Model coding cepat Meta, konteks 375K
+|-
+| Claude Haiku 5.5 || Berbayar || Model cepat Anthropic, konteks 100K
+|-
+| GPT-6.1 Terra || Berbayar || OpenAI, dua sesi sehari, konteks 1M, gambar
+|-
+| Beam 1.0 · Glyph Cluster · Nemotron 3.5 Lightning || Eksperimen gratis || Tingkat akses terbatas
+|}
+
+Gemini 3.1 Flash Lite mengerjakan tugas khusus seperti mencari file, bukan tampil di picker utama. Sudah ada yang pensiun: GLM 5.3 Flash, MiMo 2.6 Pro, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash.
+
+Desktop juga bisa menjalankan agent Claude Code dan Codex yang terpasang lokal dengan akun provider-mu sendiri; itu terpisah dari katalog Freebuff.
+
+== Batasan ==
+* Permintaan kabur menghasilkan hasil kabur.
+* Ia tidak akan mengetik password-mu atau login untukmu.
+* Di Desktop tidak ada sandbox OS: perintah memakai hak user-mu dan bisa keluar dari folder yang dibuka. Hak administrator tidak pernah diberikan diam-diam.
+* Project yang belum dikenal bisa membawa setting yang bisa dieksekusi; CLI bertanya sebelum memercayai konfigurasi agent atau MCP tingkat project, dan kepercayaan itu terikat ke sebuah direktori.
+* Build hijau adalah bukti tentang build, bukan bukti fiturnya benar.
+* Plan dan Build terpisah rapi di Desktop; CLI mengikat agent akar ke model terpilih dan mode lite internal, jadi cek perilakunya, jangan diasumsikan.
+* Chat Cloud menyimpan salinan file sendiri; menggabungkannya tugasmu, lewat git.
+* Jam gratis dibatasi per hari.
+* Konteks terbatas: chat panjang diringkas menjadi ringkasan, jadi ulangi syarat penting.
+
+== Pertanyaan umum ==
+; Apakah saya harus bisa programming?
+: Tidak, tapi permintaan yang jelas dan hasil yang bisa diperiksa lebih penting daripada istilah teknis.
+
+; Apakah benar-benar gratis?
+: Iklan yang membayar modelnya. Tanpa kartu dan tanpa API key; paket berbayar menambah jam.
+
+; Lebih baik Desktop atau Cloud?
+: Desktop untuk project lokalmu tanpa sandbox; Cloud untuk repo GitHub yang ingin dipreview dan dideploy.
+
+; Apakah bisa push ke repository saya?
+: Ia diinstruksikan untuk tidak commit, push atau membuka pull request kecuali kamu minta — itu aturan, bukan kunci teknis, jadi periksa sebelum menyetujui.
+
+; Apakah kode saya dipakai untuk pelatihan?
+: Hanya kalau model atau fiturnya menyatakan data boleh dipakai untuk pelatihan. Terpisah dari itu, data pemakaian bisa melatih model pemilihan iklan; file project dan repo terhubung tidak diberikan ke penyedia iklan.
+
+; Apa itu base3?
+: Nama siklus agent utama Freebuff: satu agent menyelidiki, mengubah dan memverifikasi dengan tool-nya sendiri.
+
+== Glosarium ==
+; Agent / model / tool / runtime
+: Empat lapisan: peran dan instruksi, yang menghasilkan teks, satu tindakan konkret, dan di mana ia berjalan.
+; Plan / Build
+: Mode hanya-baca, dan mode yang boleh mengubah file.
+; Subagent
+: Pembantu dengan satu tugas sempit; hasilnya kembali ke agent utama.
+; Freebucks
+: Satuan kredit; saldo dalam jam, 1 jam = 5 Freebucks.
+; Sandbox
+: Tempat terisolasi untuk menjalankan pekerjaan. Cloud punya; Desktop tidak mengisolasi OS-mu.
+; AGENTS.md
+: File tempat project menyatakan aturan dan perintah verifikasinya sendiri.
+; Link referral
+: Link yang memberi kredit ke orang yang membagikannya saat pengguna baru mendaftar.
+
+== Sumber ==
+* [https://freebuff.com Website resmi Freebuff] — produk, model, paket, toko.
+* [https://github.com/CodebuffAI/freebuff README] — katalog, jam dan Freebucks, tingkat akses, pemberitahuan data, lisensi.
+* [https://docs.freebuff.page/working-with-the-agent Dokumentasi — bekerja dengan agent] — siklus, mode, grup tool, batas pembantu.
+* [https://docs.freebuff.page/cli/ Dokumentasi — CLI] — install, versi Node, lokasi config.
+* [https://docs.freebuff.page/integrations/ Dokumentasi — integrasi].
+* [https://freebuff.com/blog/freebuff-launch Postingan peluncuran] — subagent dan posisinya.
+* [https://freebuff.com/?ref=ref-ee33d868-d2dc-4b5e-a4d8-8156352d2f60&via=settings_earn_link Link referral yang dipakai wiki ini] — berlabel, tanpa biaya tambahan.
+
+''Dicek pada 24 November 2026. Hal yang berubah tiap bulan — harga, nama model, jam harian — dijelaskan sebagai mekanisme, bukan angka mati.''
+
+[[Category:Freebuff]]
