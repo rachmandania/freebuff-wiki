@@ -53,10 +53,10 @@ Checked on **24 November 2026**. Everything below was re-read on the official pa
 | `Freebuff (Bahasa Indonesia)` | 244 |
 | `Buffy` | 241 |
 | `Buffy (Bahasa Indonesia)` | 242 |
-| `What's new` | 245 |
-| `What's new (Bahasa Indonesia)` | 246 |
-| `Details` (new page) | 233 |
-| `Detail (Bahasa Indonesia)` (new page) | 234 |
+| `What's new` | 247 |
+| `What's new (Bahasa Indonesia)` | 248 |
+| `Details` | 251 |
+| `Detail (Bahasa Indonesia)` | 252 |
 
 ## Changes after the 24 November restructure
 
@@ -69,12 +69,14 @@ Checked on **24 November 2026**. Everything below was re-read on the official pa
 | Free allowance no longer stated as "5 hours a day, 4 on a VPN": the pages point at the regional table on Home instead | `Freebuff`, `Freebuff (Bahasa Indonesia)` |
 | Release notes CLI 0.2.37 (09:26 UTC) and 0.2.38 (19:06 UTC) added to the dated list, with Discord permalinks; the 0.2.37 note is merged into its commit entry so there is one entry and one link | `What's new`, `What's new (Bahasa Indonesia)` |
 | The menu row in both languages carries the Details/Detail link (six rows were missing it and were fixed) | `Buffy`, `Freebuff`, `What's new` (both languages) |
+| The 18 official Discord release notes and announcements moved out of `What's new` into a fifth section on the reference pages; `What's new` keeps a three-paragraph summary and a cross-page link (19 KB → 12.5 KB) | `What's new`, `Details`, `Detail (Bahasa Indonesia)` |
 
 ## Checks run on the live pages
 
 * 0 red links on all ten pages, checked through the parser output rather than by eye.
 * Jump links whose heading ends in a question mark work: the stored id is `What_is_Freebuff.3F`, the link `[[#What is Freebuff?]]` matches it, and clicking it scrolled the page to that heading.
 * Cross-page jump verified: `[[Freebuff Wiki#How much does it cost?|Home page]]` on `Freebuff` opens the Home page with that heading 46 px from the top.
+* Cross-page jump into the moved list verified: `[[Details#What did the team announce?|Details page]]` on `What's new` opens `Details` with that heading 46 px from the top, in both languages.
 * Tables render (14 rows in the model table on `Details`, 3 tables on both Detail pages, no stray `|-` rows).
 * Menu on every page links to both `Details` and `Detail (Bahasa Indonesia)`.
 * Every page states exactly one labelled referral link where it has one, and no raw wiki syntax leaks into rendered text.
