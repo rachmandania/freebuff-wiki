@@ -4,25 +4,25 @@
 |-
 ! colspan="2" style="text-align:left; padding:6px;" | 📑 Menu — these are links, click one to open that page
 |-
-| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]]
+| style="padding:4px 8px;" | '''English''' || style="padding:4px 8px;" | [[Freebuff Wiki|Home]] &nbsp;·&nbsp; [[Freebuff]] &nbsp;·&nbsp; [[Buffy]] &nbsp;·&nbsp; [[What's new|What's new]] &nbsp;·&nbsp; [[Details|Details]]
 |-
-| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]]
+| style="padding:4px 8px;" | '''Bahasa Indonesia''' || style="padding:4px 8px;" | [[Freebuff Wiki (Bahasa Indonesia)|Beranda]] &nbsp;·&nbsp; [[Freebuff (Bahasa Indonesia)|Freebuff]] &nbsp;·&nbsp; [[Buffy (Bahasa Indonesia)|Buffy]] &nbsp;·&nbsp; [[What's new (Bahasa Indonesia)|Yang baru]] &nbsp;·&nbsp; [[Detail (Bahasa Indonesia)|Detail]]
 |}
 
-'''What's new''' lists the most recent changes to Freebuff, newest first: 14 changes from 23–24 November 2026, then the latest posts from the official blog. Every entry carries its date and a link to the original commit, so you can check it yourself instead of trusting this page.
+'''What's new''' lists the most recent changes to Freebuff, newest first: 15 entries for 23–24 November 2026 (14 code changes — the 0.2.37 entry carries its release note — plus the 0.2.38 release note; both notes also appear with the team's posts below), 18 posts from the official Discord (release notes and announcements, 5–24 November), then the latest posts from the official blog. Every entry carries its date and a link to the original source, so you can check it yourself instead of trusting this page.
 
 ''Words in yellow are links. This page is written for people who have never coded before. Freebuff changes almost every day, so this list is a snapshot, not a live feed.''
 
 == On this page ==
-[[#At a glance|1. At a glance]] · [[#How to read an entry|2. How to read an entry]] · [[#24 November 2026|3. 24 November 2026]] · [[#23 November 2026|4. 23 November 2026]] · [[#From the blog|5. From the blog]] · [[#Where this comes from|6. Where this comes from]]
+[[#What is on this page?|1. What is on this page?]] · [[#24 November 2026|2. 24 November 2026]] · [[#23 November 2026|3. 23 November 2026]] · [[#What did the team announce?|4. What did the team announce?]] · [[#What did the blog say?|5. What did the blog say?]]
 
-== At a glance ==
+== What is on this page? ==
 {| class="wikitable"
 ! Topic !! Answer
 |-
-| Newest change listed || 24 November 2026, 14:34 UTC
+| Newest item listed || 24 November 2026, 19:06 UTC
 |-
-| Changes on this page || 14, covering 23–24 November 2026
+| Items on this page || 15 entries for 23–24 Nov (14 code changes, one merged with its release note, plus 1 release note; listed twice on purpose) and 18 Discord posts (5–24 Nov)
 |-
 | Newest blog post || 16 November 2026
 |-
@@ -31,7 +31,7 @@
 | Checked on || 24 November 2026
 |}
 
-== How to read an entry ==
+== How do I read an entry? ==
 Every line looks like this: '''time — what changed — links'''. One sentence says what it means in plain language, then two small links in brackets:
 
 * '''entry''' opens that change on the changelog site that reads Freebuff's code.
@@ -40,8 +40,9 @@ Every line looks like this: '''time — what changed — links'''. One sentence 
 A commit is not a product announcement. Some of them are internal plumbing you will never notice; those are still listed here, because a reader who wants the full record should get it. Entries that touch what you actually see are marked '''you will notice'''.
 
 == 24 November 2026 ==
+* '''19:06 — Terminal version 0.2.38: context windows above 400k with your own API key.''' A release note from the team rather than a code commit; it is listed here because it shipped on the same day. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574863796206444626 release note])
 * '''14:34 — Resuming a terminal chat is limited to your own chats.''' The terminal version now validates the chat name you resume, closing a path-traversal hole that could reach other folders on the computer. '''You will notice:''' nothing, unless you were trying to do that. ([https://freebuff-changelog.nordicnode.workers.dev/c/a5dc0566e891 entry] · [https://github.com/CodebuffAI/freebuff/commit/a5dc0566e891ad9dec8fd7679b73248f8e993a84 commit])
-* '''10:49 — Terminal version 0.2.37: chat titles, a sponsorship notice, and a cap on virtual machines.''' A bundle of visible changes to the CLI rather than one fix. ([https://freebuff-changelog.nordicnode.workers.dev/c/49b6612d3d85 entry] · [https://github.com/CodebuffAI/freebuff/commit/49b6612d3d8549a6d53e7ebf6f11d2d375ec5072 commit]) '''You will notice:''' the new title and the sponsorship line.
+* '''10:49 — Terminal version 0.2.37: chat titles, a sponsorship notice, a cap on virtual machines, and a picker that says why a model is limited instead of blaming the connection.''' A bundle of visible changes to the CLI rather than one fix: this is also the release that stopped closing the terminal from looking like a crash, dropped the Connect click at sign-in, and made resume after Esc return to the interrupted state. ([https://freebuff-changelog.nordicnode.workers.dev/c/49b6612d3d85 entry] · [https://github.com/CodebuffAI/freebuff/commit/49b6612d3d8549a6d53e7ebf6f11d2d375ec5072 commit] · [https://discord.com/channels/1272267565254840401/1572836152908714085/1574717736565739592 release note]) '''You will notice:''' the new title and the sponsorship line.
 * '''09:20 — The terminal chat header stops showing an empty panel and gains a data-use line.''' The header now states what happens to your data instead of leaving a blank box. ([https://freebuff-changelog.nordicnode.workers.dev/c/12311ce1659f entry] · [https://github.com/CodebuffAI/freebuff/commit/12311ce1659f68e232e38f666eb76ca4aa96bd12 commit]) '''You will notice:''' a shorter header and one extra line of text.
 * '''09:15 — Terminal chats name themselves from the first message.''' The model writes the chat title on the first send, so you no longer start with a list of untitled sessions. ([https://freebuff-changelog.nordicnode.workers.dev/c/8233bf1a0c67 entry] · [https://github.com/CodebuffAI/freebuff/commit/8233bf1a0c67becc47fd5878cac7f8767b7c4c1c commit]) '''You will notice:''' readable names in your chat list.
 * '''07:17 — Groundwork for sharing access, including a "sharer" role.''' Shared fields and role names were added to the code that connects the desktop app to the cloud. Nothing to click yet. ([https://freebuff-changelog.nordicnode.workers.dev/c/66160989bbbb entry] · [https://github.com/CodebuffAI/freebuff/commit/66160989bbbbc879dcd89b7824c9f133fc9a2c55 commit])
@@ -57,7 +58,40 @@ A commit is not a product announcement. Some of them are internal plumbing you w
 * '''02:18 — Onboarding questions moved into the welcome flow, and three were retired.''' Fewer questions stand between a new user and their first task. ([https://freebuff-changelog.nordicnode.workers.dev/c/f53ca1b068b7 entry] · [https://github.com/CodebuffAI/freebuff/commit/f53ca1b068b7abbce7fd8e0239959396eafd28e4 commit]) '''You will notice:''' a shorter first-run experience.
 * '''00:20 — Templates gained live previews.''' Apps built from a template can be shown running before you finish them. ([https://freebuff-changelog.nordicnode.workers.dev/c/4dbf208cbdff entry] · [https://github.com/CodebuffAI/freebuff/commit/4dbf208cbdff945fe8a0141e1b31b14d1c802f70 commit]) '''You will notice:''' a preview instead of a blank page.
 
-== From the blog ==
+== What did the team announce? ==
+The list above follows the code. This tab follows the people: the Freebuff team posts release notes for each app version, and announcements, in the official Discord. These are '''all 18 posts''' from those two channels, newest first, each with its date and a link to the message itself.
+
+* The release notes live in '''📜┃changelog''', which opened on 19 November 2026 — so there is no older history to read.
+* The announcements live in '''📯┃announcements''', read back to 5 November 2026.
+
+=== Release notes — 📜┃changelog ===
+* '''24 November 2026, 19:06 UTC — CLI 0.2.38.''' Context windows above 400k work when you use your own API key. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574863796206444626 post])
+* '''24 November 2026, 09:26 UTC — CLI 0.2.37.''' Chat titles are written by the model; the model picker explains why a model is limited instead of blaming the connection; closing the terminal no longer counts as a crash; sign-in needs no "Connect" click; resuming after Esc returns to the interrupted state; two stray lines left the welcome box; the daily-limit message no longer mentions a refund. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574717736565739592 post])
+* '''23 November 2026, 08:15 UTC — Desktop 0.0.205.''' New template projects start on your computer, so previews appear at once; the Playing-status setting is back; the browser at phone and tablet sizes fits its panel and clicks land where you point; the browser panel no longer hides its page on resize. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574337558329036952 post])
+* '''20 November 2026, 19:45 UTC — Android 0.1.3.''' Rating prompt; the send button stays visible on narrow screens; push notifications and an inbox bell; a daily streak with the Streak Fire theme; a share dialog on milestone days; queued messages wait for the running turn. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573424078499356675 post])
+* '''20 November 2026, 19:44 UTC — iOS 1.1.4.''' Provider sign-in buttons centered; notification permission follows the device setting; workspace SVGs open in chat and the file viewer. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573423939445723259 post])
+* '''20 November 2026, 07:50 UTC — iOS 1.1.3.''' The transcript stops snapping to the bottom while you read; the model picker gets full height; Your sites and Browse templates; a rating prompt; turn review; one model shown in the picker; a daily streak; the default theme follows the device. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573244123836842145 post])
+* '''19 November 2026, 05:38 UTC — CLI 0.2.36.''' A <code>freebuff doctor</code> command; <code>/compact</code> and a context meter; images appear when reading files; <code>-l</code> and <code>-c</code> in code search work again; streamed markdown renders as it arrives; a higher step limit, and turns that make no progress stop. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848608422658169 post])
+* '''19 November 2026, 05:38 UTC — Desktop 0.0.204.''' An installed bundle applies at the first idle minute; a black screen is fixed; the template picker and its Sites heading are fixed; a fresher default green; new site addresses keep the project name; templates stay under Your sites; a warning before Publish replaces another chat's site; recordings with no speech say so. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848477648588864 post])
+
+=== Announcements — 📯┃announcements ===
+* '''23 November 2026, 21:42 UTC.''' One-on-one talks with Sam Park can be booked through cal.com; a few slots each day. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1574540586395111434 post])
+* '''19 November 2026, 23:48 UTC.''' Artifacts for everyone — Docs, Slides, Sheets, Design, Data Visualizer and Whiteboard — shareable by link, with realtime collaboration in beta; image generation also opened to every user. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1573122787227336744 post])
+* '''14 November 2026, 21:19 UTC.''' The merch store opened at freebuff.com/store, with a BLACKFRIDAY code for 30% off. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1571273306139795507 post])
+* '''12 November 2026, 08:45 UTC.''' A referral rewards ladder (merch, AirPods Max, a MacBook Pro); referrals made before the change also count; performance work made the web and desktop apps lighter. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1570358960844836947 post])
+* '''10 November 2026, 02:02 UTC.''' Desktop 0.0.202: local MCPs return and can be used from cloud sessions and mobile; the changes panel shows pull-request status and branch; a new Overview tab; archiving and deleting projects reworked. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569894974663688212 post])
+* '''9 November 2026, 23:08 UTC.''' A brief outage; service returned shortly after. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569488976274915512 post])
+* '''9 November 2026, 19:49 UTC.''' Freebuff arrives on iOS and Android, including remote work on local desktop projects; every account gets free DeepSeek hours each day. The allowance wording here was replaced later — see the note below. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569438774323322941 post])
+* '''7 November 2026, 01:53 UTC.''' Chat mode becomes the default for standalone chats and gains projects; a free cloud browser for Chat and Code; Remote mode for local desktop projects; Buffy becomes the mascot; desktop updates slow to at most once a week. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568443247368339560 post])
+* '''5 November 2026, 22:59 UTC.''' An infrastructure provider (Render) went down; usage was reset for everyone. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568036999770677304 post])
+* '''5 November 2026, 08:24 UTC.''' The model line is simplified around DeepSeek Flash: Tier 1 regions get unlimited use, existing users can still open "Show all models", new users start on DeepSeek Flash, and harness work cuts task time by about 20%. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1567816945276026931 post])
+
+=== Read the numbers here with care ===
+The 9 November post describes the free allowance as "5 hours a day", and paid plans as 21 hours of the slow model with 7 hours of the fast one. Both were replaced by the hour table in the Discord FAQ on 22 November 2026, which is what the Cost section of this wiki uses. An announcement is a record of what was said that day, not the current price list.
+
+''These posts were read from the two Discord channels on 24 November 2026; every line links to its own message, so the wording can be checked against the source.''
+
+== What did the blog say? ==
 The official blog publishes guides and comparisons far more often than release notes, so these are the newest posts rather than the newest features.
 
 * [https://freebuff.com/blog/free-alternative-to-augment-code 16 November 2026 — The free alternative to Augment Code]
@@ -65,7 +99,7 @@ The official blog publishes guides and comparisons far more often than release n
 * [https://freebuff.com/blog/freebuff-vs-devin 15 November 2026 — Freebuff vs Devin: a full free day vs a light quota you have to wait out]
 * [https://freebuff.com/blog/freebuff-vs-cline 13 November 2026 — Freebuff vs Cline: free all day vs an API bill that grows with every retry]
 
-== Where this comes from ==
+== Where does this come from? ==
 Two sources, and it is worth knowing which is which:
 
 * '''The change list''' comes from [https://freebuff-changelog.nordicnode.workers.dev/ an unofficial changelog] that reads the public code repository [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff] and summarises every commit. It is '''not written by Freebuff staff'''. The commits are real; a one-line summary of a commit can still put the emphasis in the wrong place. That is exactly why every entry links to the commit itself.
@@ -73,7 +107,7 @@ Two sources, and it is worth knowing which is which:
 
 The official [https://freebuff.com/changelog Freebuff changelog page] exists, but its newest entry is 18 August 2026, so it cannot be used for a "what's new" list. It is still the right place to read polished release notes for older months.
 
-== Sources ==
+== Which links were used? ==
 * [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-24/ Unofficial changelog — 24 November 2026] — every entry dated 24 November above.
 * [https://freebuff-changelog.nordicnode.workers.dev/day/2026-11-23/ Unofficial changelog — 23 November 2026] — every entry dated 23 November above.
 * [https://github.com/CodebuffAI/freebuff CodebuffAI/freebuff on GitHub] — the commits themselves.
