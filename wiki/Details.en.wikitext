@@ -11,10 +11,10 @@
 
 '''Details''' is the reference shelf for this wiki: the things that are true but too long to sit on the front page — the model list, the plan numbers, the words Freebuff uses, and the longer answers.
 
-''Everything is on this page — four sections. Words in yellow are links.''
+''Everything is on this page — five sections. Words in yellow are links.''
 
 == On this page ==
-[[#Which models are there?|1. Which models are there?]] · [[#What do the plans include?|2. What do the plans include?]] · [[#What do the words mean?|3. What do the words mean?]] · [[#Where does this come from?|4. Where does this come from?]]
+[[#Which models are there?|1. Which models are there?]] · [[#What do the plans include?|2. What do the plans include?]] · [[#What do the words mean?|3. What do the words mean?]] · [[#What did the team announce?|4. What did the team announce?]] · [[#Where does this come from?|5. Where does this come from?]]
 
 == Which models are there? ==
 The list changes often, so treat it as a snapshot and check the model picker in the app.
@@ -94,6 +94,39 @@ The list changes often, so treat it as a snapshot and check the model picker in 
 : The older credit unit; balances are in hours now, and 1 hour = 5 Freebucks.
 ; Referral link
 : A link that credits whoever shared it when a new user signs up.
+
+== What did the team announce? ==
+The change list on [[What's new|What's new]] follows the code; this section follows the people. The Freebuff team posts release notes for each app version, and announcements, in the official Discord. These are '''all 18 posts''' from those two channels, newest first, each with its date and a link to the message itself.
+
+* The release notes live in '''📜┃changelog''', which opened on 19 November 2026 — so there is no older history to read.
+* The announcements live in '''📯┃announcements''', read back to 5 November 2026.
+
+=== Release notes — 📜┃changelog ===
+* '''24 November 2026, 19:06 UTC — CLI 0.2.38.''' Context windows above 400k work when you use your own API key. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574863796206444626 post])
+* '''24 November 2026, 09:26 UTC — CLI 0.2.37.''' Chat titles are written by the model; the model picker explains why a model is limited instead of blaming the connection; closing the terminal no longer counts as a crash; sign-in needs no "Connect" click; resuming after Esc returns to the interrupted state; two stray lines left the welcome box; the daily-limit message no longer mentions a refund. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574717736565739592 post])
+* '''23 November 2026, 08:15 UTC — Desktop 0.0.205.''' New template projects start on your computer, so previews appear at once; the Playing-status setting is back; the browser at phone and tablet sizes fits its panel and clicks land where you point; the browser panel no longer hides its page on resize. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1574337558329036952 post])
+* '''20 November 2026, 19:45 UTC — Android 0.1.3.''' Rating prompt; the send button stays visible on narrow screens; push notifications and an inbox bell; a daily streak with the Streak Fire theme; a share dialog on milestone days; queued messages wait for the running turn. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573424078499356675 post])
+* '''20 November 2026, 19:44 UTC — iOS 1.1.4.''' Provider sign-in buttons centered; notification permission follows the device setting; workspace SVGs open in chat and the file viewer. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573423939445723259 post])
+* '''20 November 2026, 07:50 UTC — iOS 1.1.3.''' The transcript stops snapping to the bottom while you read; the model picker gets full height; Your sites and Browse templates; a rating prompt; turn review; one model shown in the picker; a daily streak; the default theme follows the device. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1573244123836842145 post])
+* '''19 November 2026, 05:38 UTC — CLI 0.2.36.''' A <code>freebuff doctor</code> command; <code>/compact</code> and a context meter; images appear when reading files; <code>-l</code> and <code>-c</code> in code search work again; streamed markdown renders as it arrives; a higher step limit, and turns that make no progress stop. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848608422658169 post])
+* '''19 November 2026, 05:38 UTC — Desktop 0.0.204.''' An installed bundle applies at the first idle minute; a black screen is fixed; the template picker and its Sites heading are fixed; a fresher default green; new site addresses keep the project name; templates stay under Your sites; a warning before Publish replaces another chat's site; recordings with no speech say so. ([https://discord.com/channels/1272267565254840401/1572836152908714085/1572848477648588864 post])
+
+=== Announcements — 📯┃announcements ===
+* '''23 November 2026, 21:42 UTC.''' One-on-one talks with Sam Park can be booked through cal.com; a few slots each day. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1574540586395111434 post])
+* '''19 November 2026, 23:48 UTC.''' Artifacts for everyone — Docs, Slides, Sheets, Design, Data Visualizer and Whiteboard — shareable by link, with realtime collaboration in beta; image generation also opened to every user. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1573122787227336744 post])
+* '''14 November 2026, 21:19 UTC.''' The merch store opened at freebuff.com/store, with a BLACKFRIDAY code for 30% off. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1571273306139795507 post])
+* '''12 November 2026, 08:45 UTC.''' A referral rewards ladder (merch, AirPods Max, a MacBook Pro); referrals made before the change also count; performance work made the web and desktop apps lighter. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1570358960844836947 post])
+* '''10 November 2026, 02:02 UTC.''' Desktop 0.0.202: local MCPs return and can be used from cloud sessions and mobile; the changes panel shows pull-request status and branch; a new Overview tab; archiving and deleting projects reworked. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569894974663688212 post])
+* '''9 November 2026, 23:08 UTC.''' A brief outage; service returned shortly after. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569488976274915512 post])
+* '''9 November 2026, 19:49 UTC.''' Freebuff arrives on iOS and Android, including remote work on local desktop projects; every account gets free DeepSeek hours each day. The allowance wording here was replaced later — see the note below. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1569438774323322941 post])
+* '''7 November 2026, 01:53 UTC.''' Chat mode becomes the default for standalone chats and gains projects; a free cloud browser for Chat and Code; Remote mode for local desktop projects; Buffy becomes the mascot; desktop updates slow to at most once a week. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568443247368339560 post])
+* '''5 November 2026, 22:59 UTC.''' An infrastructure provider (Render) went down; usage was reset for everyone. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1568036999770677304 post])
+* '''5 November 2026, 08:24 UTC.''' The model line is simplified around DeepSeek Flash: Tier 1 regions get unlimited use, existing users can still open "Show all models", new users start on DeepSeek Flash, and harness work cuts task time by about 20%. ([https://discord.com/channels/1272267565254840401/1326628973836238930/1567816945276026931 post])
+
+=== Read the numbers here with care ===
+The 9 November post describes the free allowance as "5 hours a day", and paid plans as 21 hours of the slow model with 7 hours of the fast one. Both were replaced by the hour table in the Discord FAQ on 22 November 2026, which is what the Cost section of this wiki uses. An announcement is a record of what was said that day, not the current price list.
+
+''These posts were read from the two Discord channels on 24 November 2026; every line links to its own message, so the wording can be checked against the source.''
 
 == Where does this come from? ==
 * [https://freebuff.com Freebuff official site] — models, plans, store.
