@@ -149,7 +149,7 @@ Yes — text ads pay for the models instead of a subscription, and there is no c
 
 * Balances are counted in **hours** since 2026-10-15. **1 hour = 5 Freebucks.**
 * A model costs hours at the rate in the picker: an hour on a one-hour model uses one hour of balance, a three-hour model uses three, free experimental models use none.
-* Supported regions get full access. Other regions and VPN/proxy users get **limited access**: 5 hours a day, or 4 on a VPN or proxy.
+* The free allowance depends on where you are: 30 hours a day in the United States, 21 or 12 in the countries listed there, 5 elsewhere, and 4 on a VPN or proxy. The full table is on the [Home page](https://freebuff.fandom.com/wiki/Freebuff_Wiki#How_much_does_it_cost?), and the daily pool is spent before your wallet.
 * Referrals and bounties earn extra hours, which sit in a wallet and are spent after the daily allowance.
 
 Current catalog (changes often — check the picker):
