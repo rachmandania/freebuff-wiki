@@ -12,7 +12,7 @@ Research notes behind the fan-made wiki **[freebuff.fandom.com/wiki/Freebuff_Wik
 | --- | --- |
 | [`docs/en.md`](docs/en.md) | Full English notes: what Freebuff is, who Buffy is, platforms, capabilities, how to start, cost, limits, FAQ, glossary |
 | [`docs/id.md`](docs/id.md) | Catatan lengkap Bahasa Indonesia (isi yang sama) |
-| [`wiki/`](wiki) | The raw wikitext of every published wiki page — the source of truth for what is live |
+| [`wiki/`](wiki) | The raw wikitext of every published wiki page — ten pages, five per language; the source of truth for what is live |
 | [`NOTES.md`](NOTES.md) | Verification log: which claims were checked where, and which earlier claims turned out wrong |
 
 ## Quick facts
@@ -31,7 +31,7 @@ Research notes behind the fan-made wiki **[freebuff.fandom.com/wiki/Freebuff_Wik
 Three details worth knowing before you repeat anything about Freebuff:
 
 * **Models change constantly.** The catalog is rented per use, so names come and go. The page explains the mechanism — hours per model — instead of freezing a list that will be stale.
-* **Balances are in hours**, since 2026-10-15, at **1 hour = 5 Freebucks**. Free access is 5 hours a day, or 4 on a VPN or proxy.
+* **Balances are in hours**, since 2026-10-15, at **1 hour = 5 Freebucks**. The free allowance depends on where you are — 30 hours a day in the US, 21 or 12 in the listed countries, 5 elsewhere, 4 on a VPN or proxy — and the current table is on the [Home page](https://freebuff.fandom.com/wiki/Freebuff_Wiki#How_much_does_it_cost?).
 * **Plan and Build are cleanly separated on Desktop**, but the CLI ties the root agent to the selected model and an internal lite mode. Do not assume Desktop behaviour applies to the CLI.
 
 ## Sources
@@ -67,7 +67,7 @@ Catatan riset di balik wiki buatan penggemar **[freebuff.fandom.com/wiki/Freebuf
 | --- | --- |
 | [`docs/id.md`](docs/id.md) | Catatan lengkap Bahasa Indonesia |
 | [`docs/en.md`](docs/en.md) | Catatan lengkap bahasa Inggris (isi sama) |
-| [`wiki/`](wiki) | Wikitext mentah setiap halaman wiki yang sudah terbit |
+| [`wiki/`](wiki) | Wikitext mentah setiap halaman wiki yang sudah terbit — sepuluh halaman, lima per bahasa |
 | [`NOTES.md`](NOTES.md) | Log verifikasi: klaim mana dicek di mana, dan klaim lama mana yang ternyata salah |
 
 ## Fakta singkat
@@ -86,7 +86,7 @@ Catatan riset di balik wiki buatan penggemar **[freebuff.fandom.com/wiki/Freebuf
 Tiga hal yang perlu diketahui sebelum mengulang informasi soal Freebuff:
 
 * **Model terus berubah.** Katalognya disewa per pemakaian, jadi nama masuk dan keluar. Halamannya menjelaskan mekanismenya — jam per model — bukan menulis daftar yang bulan depan sudah salah.
-* **Saldo dihitung dalam jam**, sejak 2026-10-15, dengan **1 jam = 5 Freebucks**. Akses gratis 5 jam sehari, atau 4 kalau pakai VPN atau proxy.
+* **Saldo dihitung dalam jam**, sejak 2026-10-15, dengan **1 jam = 5 Freebucks**. Jatah gratis tergantung wilayah — 30 jam sehari di Amerika Serikat, 21 atau 12 di negara yang terdaftar, 5 di wilayah lain, 4 kalau pakai VPN atau proxy — dan tabel terbarunya ada di [Beranda](https://freebuff.fandom.com/wiki/Freebuff_Wiki_(Bahasa_Indonesia)#Berapa_biayanya?).
 * **Plan dan Build terpisah rapi di Desktop**, tapi CLI mengikat agent akar ke model terpilih dan mode lite internal. Jangan menganggap perilaku Desktop berlaku sama di CLI.
 
 ## Sumber
